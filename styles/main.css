@@ -27,13 +27,28 @@ h3 {
   font-size: 3.6rem;
   line-height: 4.6rem;
 }
+
+h4 {
+  font-size: 2.4rem;
+  line-height: 3.4rem;
+  margin: 0;
+}
+
 /* Other classes */
 .align-center {
   align-items: center;
 }
 
+.app-icon {
+  width: 13rem;
+}
+
 .background-white {
   background-color: #ffffff;
+}
+
+.background-light-blue {
+  background-color: rgba(154, 199, 238, 0.1);
 }
 
 .btn-blue {
@@ -43,6 +58,22 @@ h3 {
   border-radius: 5px;
   height: 4rem;
   width: 10rem;
+}
+
+.btn-blue:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+.btn-blue:after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-blue:active {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgb(255, 255, 255, 0.29);
 }
 
 .btn-blue:focus {
@@ -90,6 +121,18 @@ h3 {
   margin: auto;
 }
 
+.m-b-8 {
+  margin-bottom: 4rem;
+}
+
+.m-r-6 {
+  margin-right: 3rem;
+}
+
+.m-r-8 {
+  margin-right: 4rem;
+}
+
 .m-t-12 {
   margin-top: 6rem;
 }
@@ -110,10 +153,75 @@ h3 {
   padding-bottom: 8rem;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
 .text-center {
   text-align: center;
 }
 
 .width-50 {
   width: 50%;
+}
+
+@media only screen and (max-width: 1200px) {
+  .flex-0-media {
+    flex: 0;
+    margin: 0 1rem;
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  body {
+    font-size: 1.6rem;
+  }
+
+  h1 {
+    font-size: 6.2rem;
+    line-height: 7.8rem;
+  }
+
+  h2 {
+    font-size: 4.3rem;
+  }
+
+  h3 {
+    font-size: 3.3rem;
+  }
+
+  h4 {
+    font-size: 2.1rem;
+  }
+
+  .font-media {
+    font-size: 1.4rem;
+  }
+
+  .width-60-media {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  h4 {
+    margin-top: 2rem;
+  }
+
+  .direction-column-media {
+    flex-direction: column;
+  }
+
+  .advantage-styles {
+    width: 60%;
+    text-align: center;
+  }
+
+  .app-icon {
+    margin: 0;
+  }
+
+  .opacity-0-media {
+    opacity: 0;
+  }
 }
