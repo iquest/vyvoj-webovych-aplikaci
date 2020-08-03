@@ -117,6 +117,11 @@ h4 {
   justify-content: center;
 }
 
+.link {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .m-auto {
   margin: auto;
 }
