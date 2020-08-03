@@ -165,10 +165,27 @@ h4 {
   width: 50%;
 }
 
+
+
+/* SCREEN SIZE STYLES */
+
 @media only screen and (max-width: 1200px) {
   .flex-0-media {
     flex: 0;
     margin: 0 1rem;
+  }
+  .font-info {
+    width: 60%;
+  }
+
+  .title-footer {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .width-1000 {
+    width:60%;
   }
 }
 
@@ -194,16 +211,34 @@ h4 {
     font-size: 2.1rem;
   }
 
+  .font-info{
+    width: 63%;
+  }
+
   .font-media {
     font-size: 1.4rem;
   }
 
-  .width-60-media {
-    width: 60%;
+  .title-footer {
+    width: 66%;
   }
 }
 
 @media only screen and (max-width: 750px) {
+body {
+  font-size: 1.3rem;
+}
+
+  h2 {
+    font-size: 3.6rem;
+    margin-bottom: 0.7rem;
+  }
+
+  h3 {
+    font-size: 2.6rem;
+    margin: 0 2rem;
+  }
+
   h4 {
     margin-top: 2rem;
   }
@@ -221,7 +256,126 @@ h4 {
     margin: 0;
   }
 
+  .font-info{
+    width: 80%;
+  }
+
   .opacity-0-media {
     opacity: 0;
+    display: none;
   }
+
+  .title-footer {
+    font-size: 2.62rem;
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  body {
+    font-size: 1.1rem;
+  }
+
+
+  h2 {
+    font-size: 3.2rem;
+  }
+
+  h3 {
+  font-size: 2.3rem;
+}
+
+.font-info{
+  font-size: 1.2rem;
+}
+
+.font-footer {
+  font-size: 1.4rem;
+  width: 80%;
+}
+
+.title-footer {
+  font-size: 2.5rem;
+  line-height: normal;
+  width: 80%;
+}
+
+}
+
+@media only screen and (max-width: 470px) {
+
+  h2 {
+    font-size: 2.7rem;
+  }
+
+  h3 {
+  font-size: 1.8rem;
+  line-height: normal;
+}
+
+  h4 {
+    font-size: 1.7rem;
+    line-height: normal;
+  }
+
+.app-icon {
+  width: 11rem;
+}
+
+.font-icons  {
+  font-size: 1.4rem;
+}
+
+.font-footer {
+  font-size: 1.2rem;
+}
+
+.title-footer {
+  font-size: 1.9rem;
+}
+
+}
+
+@media only screen and (max-width: 380px) {
+  body {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 2.3rem;
+  }
+
+  h3 {
+    font-size: 1.68rem;
+  }
+
+  h4 {
+    font-size: 1.55rem;
+   }
+
+}
+
+@media only screen and (max-width: 350px) {
+
+  h3 {
+  font-size: 1.5rem;
+  line-height: normal;
+}
+
+h4 {
+  font-size: 1.4rem;
+ }
+
+ .font-icons {
+   font-size: 1.2rem;
+ }
+
+.font-footer {
+  font-size: 1.1rem;
+}
+
+.title-footer {
+  font-size: 1.7rem;
+}
+
 }

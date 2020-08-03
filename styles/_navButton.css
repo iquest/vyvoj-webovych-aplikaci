@@ -8,8 +8,8 @@
   height: 7rem;
   width: 7rem;
   position: fixed;
-  top: 6rem;
-  right: 6rem;
+  top: 3rem;
+  right: 3rem;
   border-radius: 50%;
   z-index: 2000;
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1);
@@ -23,8 +23,8 @@
   width: 6rem;
   border-radius: 50%;
   position: fixed;
-  top: 6.5rem;
-  right: 6.5rem;
+  top: 3.5rem;
+  right: 3.5rem;
   background-image: radial-gradient(#9aafc0, #e0eceb);
   z-index: 1000;
   transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
@@ -35,7 +35,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1500;
+  z-index: -5;
 
   opacity: 0;
   width: 0;
@@ -43,10 +43,11 @@
 }
 
 .navigation__list {
+  display: none;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-53%, -50%);
   list-style: none;
   text-align: center;
   width: 100%;
@@ -65,14 +66,6 @@
   color: rgb(225, 225, 255);
   text-decoration: none;
   text-transform: uppercase;
-  background-image: linear-gradient(
-    120deg,
-    transparent 0%,
-    transparent 50%,
-    rgb(225, 225, 225) 50%
-  );
-  background-size: 220%;
-  transition: all 0.4s;
 }
 
 .navigation:hover,
@@ -88,6 +81,7 @@
 
 .navigation__checkbox:checked ~ .navigation__nav {
   opacity: 1;
+  z-index: 1500;
   width: 100%;
 }
 
@@ -148,4 +142,36 @@
   .navigation__background {
     display: block;
   }
+
+  .navigation__list {
+    display: block;
+  }
+}
+
+
+@media only screen and (max-width: 500px) {
+  .navigation__button {
+    height: 6rem;
+    width: 6rem;
+    top: 3rem;
+    right: 3rem;
+
+  }
+
+  .navigation__background {
+    height: 5rem;
+    width: 5rem;
+    top: 3.5rem;
+    right: 3.5rem;
+  }
+
+  .navigation__icon {
+    margin-top: 3rem;
+  }
+
+  .navigation__link:link,
+.navigation__link:visited {
+  font-size: 2rem;
+}
+
 }
