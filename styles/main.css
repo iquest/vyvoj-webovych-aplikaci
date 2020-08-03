@@ -225,9 +225,6 @@ h4 {
 }
 
 @media only screen and (max-width: 750px) {
-body {
-  font-size: 1.3rem;
-}
 
   h2 {
     font-size: 3.6rem;
@@ -260,9 +257,21 @@ body {
     width: 80%;
   }
 
+  .font-blue {
+    font-size: 1.5rem;
+  }
+
   .opacity-0-media {
     opacity: 0;
     display: none;
+  }
+
+  .p-t-16 {
+    padding-top: 4rem;
+  }
+
+  .p-b-16 {
+    padding-bottom: 4rem;
   }
 
   .title-footer {
@@ -272,10 +281,6 @@ body {
 }
 
 @media only screen and (max-width: 550px) {
-  body {
-    font-size: 1.1rem;
-  }
-
 
   h2 {
     font-size: 3.2rem;
@@ -283,6 +288,10 @@ body {
 
   h3 {
   font-size: 2.3rem;
+}
+
+.font-blue {
+  font-size: 1.3rem;
 }
 
 .font-info{
@@ -322,6 +331,10 @@ body {
   width: 11rem;
 }
 
+.font-blue {
+  font-size: 1.1rem;
+}
+
 .font-icons  {
   font-size: 1.4rem;
 }
@@ -330,6 +343,15 @@ body {
   font-size: 1.2rem;
 }
 
+.p-t-16 {
+  padding-top: 2rem;
+}
+
+.p-b-16 {
+  padding-bottom: 2rem;
+}
+
+
 .title-footer {
   font-size: 1.9rem;
 }
@@ -337,9 +359,6 @@ body {
 }
 
 @media only screen and (max-width: 380px) {
-  body {
-    font-size: 1rem;
-  }
 
   h2 {
     font-size: 2.3rem;
