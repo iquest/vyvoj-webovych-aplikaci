@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <div class="hero-img">
+  <div class="hero-img p-b-16">
     <div class="navigation">
       <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
 
@@ -26,7 +26,7 @@
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Co je webová aplikace?</a>
+            <a href="#web_app" class="navigation__link" onClick="handleChange()">Co je webová aplikace?</a>
           </li>
           <li class="navigation__item">
             <a href="#" class="navigation__link">Proces vývoje</a>
@@ -43,6 +43,8 @@
         </ul>
       </nav>
     </div>
+
+
 
     <nav class="flex p-t-8 font-white align-center font-media opacity-0-media">
       <div class="flex-1 flex-0-media"></div>
@@ -65,15 +67,20 @@
       webových aplikací
     </h1>
     <div>
-      <p class="font-white text-center">
+      <p class="font-white text-center font-title">
         Zjistěte, jak vám můžou pokročilé funkce webových aplikací
         <br />
         pomoci ve vašem podnikání
       </p>
     </div>
+    <br />
+    <br />
+    <div class="flex size-100">
+      <img alt="hero" class="background-img m-auto" src="../images/hero2.webp"></img>
+    </div>
   </div>
 
-  <div class="m-t-negative background-white p-t-16 p-b-16" id='web_app'>
+  <div class="background-white p-t-16 p-b-16" id='web_app'>
     <p class="font-blue text-center">Bez úvodu se neobejdeme</p>
     <h2 class="text-center">Co je webová aplikace?</h2>
     <p class="text-center font-grey m-auto width-50 font-info">
@@ -181,6 +188,7 @@
       <div>Jak to tedy je…?</div>
     </div>
   </div>
+  <script src='scripts/main.js'></script>
 </body>
 
 </html>

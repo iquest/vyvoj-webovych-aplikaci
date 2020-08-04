@@ -43,6 +43,16 @@ h4 {
   width: 13rem;
 }
 
+.size-100 {
+  height: 100%;
+  width: 100%;
+}
+
+.background-img {
+  width: 80%;
+  height: 50%;
+}
+
 .background-white {
   background-color: #ffffff;
 }
@@ -105,12 +115,12 @@ h4 {
 }
 
 .hero-img {
-  background-image: url("../images/hero.png");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 170rem;
-  width: 100%;
+  background-image: linear-gradient(
+    180deg,
+    #b9c6d9 82%,
+    #e2f1fa62 89%,
+    #b9c6d9 93%
+  );
 }
 
 .justify-center {
@@ -170,8 +180,6 @@ h4 {
   width: 50%;
 }
 
-
-
 /* SCREEN SIZE STYLES */
 
 @media only screen and (max-width: 1200px) {
@@ -190,7 +198,7 @@ h4 {
 
 @media only screen and (max-width: 1000px) {
   .width-1000 {
-    width:60%;
+    width: 60%;
   }
 }
 
@@ -216,7 +224,7 @@ h4 {
     font-size: 2.1rem;
   }
 
-  .font-info{
+  .font-info {
     width: 63%;
   }
 
@@ -230,6 +238,11 @@ h4 {
 }
 
 @media only screen and (max-width: 750px) {
+  h1 {
+    font-size: 5.2rem;
+    margin-top: 0;
+    padding-top: 5rem;
+  }
 
   h2 {
     font-size: 3.6rem;
@@ -245,10 +258,6 @@ h4 {
     margin-top: 2rem;
   }
 
-  .direction-column-media {
-    flex-direction: column;
-  }
-
   .advantage-styles {
     width: 60%;
     text-align: center;
@@ -258,12 +267,25 @@ h4 {
     margin: 0;
   }
 
-  .font-info{
+  .direction-column-media {
+    flex-direction: column;
+  }
+
+  .font-info {
     width: 80%;
   }
 
   .font-blue {
     font-size: 1.5rem;
+  }
+
+  .hero-img {
+    background-image: linear-gradient(
+      180deg,
+      #b9c6d9 84%,
+      #e2f1fa62 92%,
+      #b9c6d9 97%
+    );
   }
 
   .opacity-0-media {
@@ -286,85 +308,105 @@ h4 {
 }
 
 @media only screen and (max-width: 550px) {
+  h1 {
+    font-size: 4.2rem;
+  }
 
   h2 {
     font-size: 3.2rem;
   }
 
   h3 {
-  font-size: 2.3rem;
-}
+    font-size: 2.3rem;
+  }
 
-.font-blue {
-  font-size: 1.3rem;
-}
+  .font-blue {
+    font-size: 1.3rem;
+  }
 
-.font-info{
-  font-size: 1.2rem;
-}
+  .font-info {
+    font-size: 1.2rem;
+  }
 
-.font-footer {
-  font-size: 1.4rem;
-  width: 80%;
-}
+  .font-footer {
+    font-size: 1.4rem;
+    width: 80%;
+  }
 
-.title-footer {
-  font-size: 2.5rem;
-  line-height: normal;
-  width: 80%;
-}
+  .title-footer {
+    font-size: 2.5rem;
+    line-height: normal;
+    width: 80%;
+  }
 
+  .font-title {
+    font-size: 1.4rem;
+  }
 }
 
 @media only screen and (max-width: 470px) {
+  h1 {
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+  }
 
   h2 {
     font-size: 2.7rem;
   }
 
   h3 {
-  font-size: 1.8rem;
-  line-height: normal;
-}
+    font-size: 1.8rem;
+    line-height: normal;
+  }
 
   h4 {
     font-size: 1.7rem;
     line-height: normal;
   }
 
-.app-icon {
-  width: 11rem;
-}
+  .app-icon {
+    width: 11rem;
+  }
 
-.font-blue {
-  font-size: 1.1rem;
-}
+  .font-blue {
+    font-size: 1.1rem;
+  }
 
-.font-icons  {
-  font-size: 1.4rem;
-}
+  .font-icons {
+    font-size: 1.4rem;
+  }
 
-.font-footer {
-  font-size: 1.2rem;
-}
+  .font-footer {
+    font-size: 1.2rem;
+  }
 
-.p-t-16 {
-  padding-top: 2rem;
-}
+  .font-title {
+    font-size: 1.2rem;
+  }
 
-.p-b-16 {
-  padding-bottom: 2rem;
-}
+  .hero-img {
+    background-image: linear-gradient(
+      180deg,
+      #b9c6d9 85%,
+      #e2f1fa62 93%,
+      #b9c6d9 98%
+    );
+  }
 
+  .p-t-16 {
+    padding-top: 2rem;
+  }
 
-.title-footer {
-  font-size: 1.9rem;
-}
+  .p-b-16 {
+    padding-bottom: 2rem;
+  }
 
+  .title-footer {
+    font-size: 1.9rem;
+  }
 }
 
 @media only screen and (max-width: 380px) {
-
   h2 {
     font-size: 2.3rem;
   }
@@ -375,31 +417,35 @@ h4 {
 
   h4 {
     font-size: 1.55rem;
-   }
+  }
 
+  .font-title {
+    font-size: 1.1rem;
+  }
 }
 
 @media only screen and (max-width: 350px) {
-
   h3 {
-  font-size: 1.5rem;
-  line-height: normal;
-}
+    font-size: 1.5rem;
+    line-height: normal;
+  }
 
-h4 {
-  font-size: 1.4rem;
- }
+  h4 {
+    font-size: 1.4rem;
+  }
 
- .font-icons {
-   font-size: 1.2rem;
- }
+  .font-icons {
+    font-size: 1.2rem;
+  }
 
-.font-footer {
-  font-size: 1.1rem;
-}
+  .font-footer {
+    font-size: 1.1rem;
+  }
+  .font-title {
+    margin: 0 4rem;
+  }
 
-.title-footer {
-  font-size: 1.7rem;
-}
-
+  .title-footer {
+    font-size: 1.7rem;
+  }
 }
