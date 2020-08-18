@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <link href="https://use.typekit.net/bvk7ryi.css" rel="stylesheet">;
+  <link href="styles/main.css" rel="stylesheet" />
+  <link href="styles/_navButton.css" rel="stylesheet" />
+
+  <title>iQuest</title>
+</head>
+
+<body>
+  <div class="hero-img p-b-16">
+    <div class="navigation">
+      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+
+      <label for="navi-toggle" class="navigation__button">
+        <span class="navigation__icon">&nbsp;</span>
+      </label>
+
+      <div class="navigation__background">&nbsp;</div>
+
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a href="#web_app" class="navigation__link" onClick="handleChange()">Co je webová aplikace?</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Proces vývoje</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Technologie</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Cena</a>
+          </li>
+          <li class="navigation__item">
+            <a href="#" class="navigation__link">Chci appku</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+
+
+    <nav class="flex p-t-8 font-white align-center font-media opacity-0-media">
+      <div class="flex-1 flex-0-media"></div>
+      <img alt="logo" class="flex-1" src="images/logo.svg" />
+      <a href='#web_app' class="link flex-1 text-center pointer">Co je webová aplikace?</a>
+      <a class="link flex-1 text-center pointer">Proces vývoje</a>
+      <a class="link flex-1 text-center pointer">Technologie</a>
+      <a class="link flex-1 text-center pointer">Cena</a>
+      <div class="flex-1">
+        <button class="btn-blue font-white pointer">
+          Chci appku
+        </button>
+      </div>
+      <div class="flex-1 flex-0-media"></div>
+    </nav>
+
+    <h1 class="font-white">
+      Objevte svět
+      <br />
+      webových aplikací
+    </h1>
+    <div>
+      <p class="font-white text-center font-title">
+        Zjistěte, jak vám můžou pokročilé funkce webových aplikací
+        <br />
+        pomoci ve vašem podnikání
+      </p>
+    </div>
+    <br />
+    <br />
+    <picture class="flex size-100">
+      <source srcset="../images/hero2.webp" type="image/webp">
+      <source srcset="../images/hero3.png" type="image/png">
+      <img alt="hero" class="background-img m-auto" src="../images/hero2.webp"></img>
+    </picture>
+  </div>
+
+
+  <div class="background-light-blue text-center p-t-16 p-b-16 ">
+    <h3 class="width-50 m-auto title-footer">
+      Rozdíl mezi webovou aplikací a webovou stránkou
+    </h3>
+    <div class="font-grey width-50 m-auto font-footer">
+      <br />
+      <div>
+        Většina lidí používá označení “web” k popisu jakékoliv internetové
+        platformy. Je ale důležité rozlišovat meziMicro webovou stránkou a
+        webovou aplikací. Jaký je tedy rozdíl mezi těmito dvěma termíny?
+      </div>
+      <br />
+      <div>
+        Běžný uživatel na první pohled rozdíl nepozná, nezajímají ho totiž
+        funkcionality, které běží v pozadí. Uživatel chce pouze efektivně
+        splnit účel, za kterým web navštívil.
+      </div>
+      <div>Kdo ale mezi těmito dvěma pojmy rozlišuje jsou vývojáři.</div>
+      <br />
+      <div>
+        Pokud tedy uvažujete o prezentaci své firmy na internetu, určitě je
+        pro vás užitečné vědět, jaký je rozdíl mezi webovou stránkou a webovou
+        aplikací. Možná totiž zjistíte, že potřebujete webovou aplikaci a
+        pouze webová stránka vám nestačí. Určit hranici mezi webovou stránkou
+        a webovou aplikací je často velmi obtížné.
+      </div>
+      <br />
+      <div>Jak to tedy je…?</div>
+    </div>
+  </div>
+  <script src='scripts/main.js'></script>
+</body>
+
+</html>
