@@ -7,6 +7,7 @@ html {
 body {
   font-family: "filson-pro", sans-serif;
   font-size: 1.8rem;
+  font-weight: 300;
   width: 100%;
   margin: 0;
 }
@@ -35,7 +36,6 @@ h4 {
 
 h5 {
   font-size: 2rem;
-  line-height: 3.4rem;
   margin: 0;
 }
 
@@ -147,6 +147,8 @@ h5 {
     linear-gradient(to right, #e2f1fa62 83%, #b9c6d9 87%);
 }
 
+/* 5 reasons box */
+
 .home-box1 {
   width: 50%;
   text-align: center;
@@ -155,7 +157,7 @@ h5 {
 
 .home-list {
   display: flex;
-  background-color: aqua;
+  background-color: #F4F7FA;
   padding-top: 8rem;
   margin-top: 8rem;
   margin-right: 19rem;
@@ -178,10 +180,56 @@ h5 {
   font-size: 1.6rem;
 }
 
+.img-05 {
+  position: absolute;
+  bottom: 2rem;
+  right: -6rem;
+  width: 45rem;
+}
+
 .img-box {
   width: 20%;
 }
 
+.img-triangle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20rem;
+}
+
+/* Cactus text box */
+
+.cactus-box {
+  width: 70%;
+}
+
+.cactus-text-box {
+width: 65%;
+margin-top: 18rem;
+}
+
+.cactus-text {
+  font-size: 1.6rem;
+  line-height: 2.5rem;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  width: 80%;
+
+}
+
+.column {
+  flex: 0 0 50%;
+  margin-right: 2rem;
+}
+
+.img-cactus {
+  height: 50rem;
+}
+
+
+
+/*  */
 .justify-center {
   justify-content: center;
 }
@@ -206,6 +254,10 @@ h5 {
 
 .m-auto {
   margin: auto;
+}
+
+.m-b-4 {
+  margin-bottom: 2rem;
 }
 
 .m-b-8 {
@@ -272,8 +324,16 @@ h5 {
   line-height: 4.6rem;
 }
 
+.relative {
+  position: relative;
+}
+
 .width-50 {
   width: 50%;
+}
+
+.width-80 {
+  width: 80%;
 }
 
 /* SCREEN SIZE STYLES */
