@@ -44,6 +44,10 @@ h5 {
   align-items: center;
 }
 
+.align-start {
+  align-items: start;
+}
+
 .app-icon-number {
   width: 6rem;
 }
@@ -72,10 +76,6 @@ h5 {
 
 .background-white {
   background-color: #ffffff;
-}
-
-.background-light-blue {
-  background-color: rgba(154, 199, 238, 0.1);
 }
 
 .btn-blue {
@@ -122,6 +122,10 @@ h5 {
 
 .font-white {
   color: #ffffff;
+}
+
+.weight-400 {
+  font-weight: 400;
 }
 
 .flex {
@@ -274,8 +278,39 @@ margin-top: 18rem;
   margin-left: 2rem;
 }
 
+/* Helper */
+
+.helper {
+  margin-top: 15rem;
+}
+
+.helper-img{
+  height: 30%;
+}
 
 
+/* FOOTER */
+
+.footer {
+  background-color: #465DFF;
+  width: 95%;
+  margin: auto;
+
+}
+
+.title-footer {
+  color: white;
+  margin-bottom: 10rem;
+}
+
+.footer-add {
+  color: white;
+  font-size: 3rem;
+  font-weight: 300;
+  margin: auto;
+  margin-top: 15rem;
+  width: 95%;
+}
 
 /*  */
 .justify-center {
@@ -323,6 +358,10 @@ margin-top: 18rem;
 
 .m-b-16 {
   margin-bottom: 8rem;
+}
+
+.m-l-8 {
+  margin-left: 4rem;
 }
 
 .m-r-6 {
@@ -375,10 +414,6 @@ margin-top: 18rem;
 
 .text-center {
   text-align: center;
-}
-
-.title-footer {
-  line-height: 4.6rem;
 }
 
 .relative {
