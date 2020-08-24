@@ -312,6 +312,24 @@ margin-top: 18rem;
   width: 95%;
 }
 
+.stroke-text {
+    color: #465DFF;
+    cursor: pointer;
+    font-size: 7rem;
+    font-weight: bold;
+    text-shadow:
+     -1px -1px 0 white,
+      1px -1px 0 white,
+      -1px 1px 0 white,
+       1px 1px 0 white;
+}
+
+.stroke-text:hover {
+  color: white;
+  transition: 0.2s all;
+  text-shadow: none;
+}
+
 /*  */
 .justify-center {
   justify-content: center;
