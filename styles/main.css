@@ -2,6 +2,7 @@
 
 html {
   font-size: 10px;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -21,6 +22,10 @@ h1 {
 
 h2 {
   font-size: 2rem;
+}
+
+.h2-big {
+  font-size: 3rem;
 }
 
 h3 {
@@ -179,9 +184,14 @@ h5 {
   margin-right: 19rem;
 }
 
+
 .home-list-position {
   width: 85%;
   margin-left: auto;
+}
+
+.home-list-title{
+  width: 73%;
 }
 
 .home-list-boxes {
@@ -189,11 +199,12 @@ h5 {
   border-radius: 5px;
   display: flex;
   flex-direction: column;
+  font-size: 1.6rem;
   padding: 3rem;
   margin-bottom: 4rem;
   margin-right: 3rem;
-  width: 26rem;
-  font-size: 1.6rem;
+  width: 25.4rem;
+  z-index: 2;
 }
 
 .img-05 {
@@ -211,7 +222,7 @@ h5 {
   position: absolute;
   top: 0;
   right: 0;
-  width: 20rem;
+  width: 12vw;
 }
 
 /* Cactus text box */
@@ -310,6 +321,7 @@ margin-top: 18rem;
   margin: auto;
   margin-top: 15rem;
   width: 95%;
+  padding-bottom: 15rem;
 }
 
 .stroke-text {
@@ -322,6 +334,7 @@ margin-top: 18rem;
       1px -1px 0 white,
       -1px 1px 0 white,
        1px 1px 0 white;
+    text-decoration: none;
 }
 
 .stroke-text:hover {
@@ -329,6 +342,38 @@ margin-top: 18rem;
   transition: 0.2s all;
   text-shadow: none;
 }
+
+/* Process Page */
+
+/* process title */
+
+.blue-line {
+  background-color: #465dff;
+  height: 1px;
+  width: 15rem;
+}
+
+.padding-title{
+  padding-bottom: 20rem;
+}
+
+.rotated-text{
+  transform: rotate(-90deg);
+  position: absolute;
+  left: -9%;
+  bottom: 40%;
+}
+
+.process__settings-box{
+  margin-top: 8rem;
+}
+
+.img-big-settings{
+  height: 25rem;
+  margin-top: 3rem;
+  margin-right: 10rem;
+}
+
 
 /*  */
 .justify-center {
@@ -344,14 +389,29 @@ margin-top: 18rem;
 }
 
 
-.link {
+.link-home {
   text-decoration: none;
   color: #ffffff;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
+
 }
 
-.link:hover {
+.link {
+  text-decoration: none;
+  color: #8d9aa9;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.link-active {
+  text-decoration: none;
+  color: black;
+  padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+}
+
+.link:hover, .link-home:hover {
   color: #8d9aa9;
   transform: translateY(-3px) translateX(2px);
   transition: all 0.3s;
@@ -390,6 +450,10 @@ margin-top: 18rem;
   margin-right: 4rem;
 }
 
+.m-r-14 {
+  margin-right: 7rem;
+}
+
 .m-t-0 {
   margin-top: 0;
 }
@@ -400,6 +464,10 @@ margin-top: 18rem;
 
 .m-t-12 {
   margin-top: 6rem;
+}
+
+.m-t-20 {
+  margin-top: 10rem;
 }
 
 .m-t-negative {
@@ -478,7 +546,15 @@ margin-top: 18rem;
 @media only screen and (max-width: 1000px) {
 
   .advantage-styles {
-    width: 60%;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home-list-title{
+    text-align: center;
+    width: 89%;
   }
 }
 
