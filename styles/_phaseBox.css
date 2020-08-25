@@ -1,0 +1,87 @@
+.process__list {
+  height: 400rem;
+}
+
+.box{
+  position: absolute;
+  height: 31.7rem;
+}
+.box1{
+  left: 10%;
+}
+
+.box2 {
+  left: 45%;
+  top: 36rem;
+}
+
+.box3{
+  left: 0%;
+  top: 85rem;
+}
+
+.box4{
+  left: 41%;
+  top: 124rem;
+}
+
+.box5{
+  left: 5%;
+  top: 185rem;
+}
+
+.box6{
+  left: 46%;
+  top: 226rem;
+}
+
+.box7{
+  left: 11%;
+  top: 277rem;
+}
+
+/* paths */
+
+.path {
+  position: absolute;
+}
+
+.path1 {
+  left: 30%;
+  top: 16rem;
+}
+
+.path2 {
+  left: 21%;
+  top: 56rem;
+}
+
+.path3 {
+  left: 19%;
+  top: 100rem;
+}
+
+.path4 {
+  left: 26%;
+  top: 141rem;
+}
+
+.path5 {
+  left: 25%;
+  top: 203rem;
+}
+
+.path6 {
+  left: 31%;
+  top: 243rem;
+}
+
+.path7 {
+  left: 31%;
+  top: 293rem;
+}
+
+
+/* .path3 {
+  filter: invert(62%) sepia(94%) saturate(6811%) hue-rotate(227deg) brightness(102%) contrast(101%);
+} */
