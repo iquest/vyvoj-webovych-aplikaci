@@ -310,11 +310,14 @@ margin-top: 18rem;
   background-color: #465DFF;
   width: 95%;
   margin: auto;
+  margin-bottom: 3rem;
+  padding-bottom: 4rem;
 
 }
 
 .title-footer {
   color: white;
+  margin: auto;
   margin-bottom: 10rem;
 }
 
@@ -322,17 +325,23 @@ margin-top: 18rem;
   color: white;
   font-size: 3rem;
   font-weight: 300;
-  margin: auto;
-  margin-top: 15rem;
-  width: 95%;
-  padding-bottom: 15rem;
+  padding-left: 6rem;
+}
+
+.position-plus{
+position: absolute;
+left: -3.2rem;
+top: -2.2rem;
+transition: all 0.2s;
 }
 
 .stroke-text {
+    position: relative;
     color: #465DFF;
     cursor: pointer;
     font-size: 7rem;
     font-weight: bold;
+    margin-bottom: 5rem;
     text-shadow:
      -1px -1px 0 white,
       1px -1px 0 white,
@@ -346,6 +355,11 @@ margin-top: 18rem;
   transition: 0.2s all;
   text-shadow: none;
 }
+
+.stroke-text:hover ~ .position-plus {
+  transform: rotate(45deg);
+}
+
 
 /* Process Page */
 
@@ -390,6 +404,10 @@ margin-top: 18rem;
 
 .justify-end {
   justify-content: flex-end;
+}
+
+.justify-start{
+  justify-content: start;
 }
 
 

@@ -1,6 +1,8 @@
 .technology-front{
   width: 65%;
 }
-.img-technology{
-  width: 207px;
+
+
+.img-technology-box {
+  min-width: 200px;
 }
