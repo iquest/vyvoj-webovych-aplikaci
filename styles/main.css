@@ -464,6 +464,10 @@ transition: all 0.2s;
   margin-left: 4rem;
 }
 
+.m-l-12 {
+  margin-left: 6rem;
+}
+
 .m-r-6 {
   margin-right: 3rem;
 }
