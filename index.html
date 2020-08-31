@@ -26,16 +26,16 @@
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a href="#web_app" class="navigation__link" onClick="handleChange()">Co je webová aplikace?</a>
+            <a href="/" class="navigation__link" onClick="handleChange()">Co je webová aplikace?</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Proces vývoje</a>
+            <a href="/process.html" class="navigation__link">Proces vývoje</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Technologie</a>
+            <a href="/technology.html" class="navigation__link">Technologie</a>
           </li>
           <li class="navigation__item">
-            <a href="#" class="navigation__link">Cena</a>
+            <a href="/price.html" class="navigation__link">Cena</a>
           </li>
           <li class="navigation__item">
             <a href="#" class="navigation__link">Chci appku</a>
@@ -82,7 +82,7 @@
     </picture>
   </div>
 
-  <div class="background-white p-t-16 p-b-16" id='web_app'>
+  <div class="background-white p-t-16" id='web_app'>
     <div class="flex p-t-8">
       <img alt="settings" class="app-icon-set m-r-8" src="images/settings.png" />
       <div class="home-box1">
@@ -170,15 +170,19 @@
     </div>
 
     <div class="m-t-16 cactus-box m-auto">
-      <div class="flex ">
+      <div class="flex cactus-sm-screen">
         <div class="cactus-text-box">
-          <img alt="star" class="m-b-4" src="/images/star.svg" />
-          <h2 class="font-blue">Webová aplikace vs. webová stránka</h2>
+          <img alt="star" class="m-b-4 hide-small" src="/images/star.svg" />
+          <h2 class="font-blue hide-small">Webová aplikace vs. webová stránka</h2>
           <h3>Většina lidí používá označení “web” k popisu jakékoliv internetové platformy. Je ale důležité rozlišovat
             mezi micro webovou stránkou
             a webovou aplikací. Jaký je tedy rozdíl mezi těmito dvěma termíny? </h3>
         </div>
-        <div>
+        <div class="flex align-first">
+          <div class="show-small">
+            <img alt="star" class="m-b-4" src="/images/star.svg" />
+            <h2 class="font-blue">Webová aplikace vs. webová stránka</h2>
+          </div>
           <img alt='big-cactus' class="img-cactus" src="/images/cactuses-top.png" />
         </div>
       </div>
@@ -199,10 +203,8 @@
         </div>
       </div>
 
-      <div class="flex p-t-16">
-        <div class="flex-1">
-          <img alt='buble-text' src="/images/quote.svg" />
-        </div>
+      <div class="flex p-t-16 table-header hide-cactuses">
+        <img alt='buble-text' class="flex-1" src="/images/quote.svg" />
         <div class="flex flex-1 align-center justify-end direction-column">
           <img alt="cactus-green" class="cactus-green" src="/images/cactus-green.png" />
           <p class="cactus-title">Webová aplikace</p>
@@ -213,6 +215,21 @@
         </div>
       </div>
 
+      <div class="p-t-16 table-header text-center show-cactuses">
+        <h2 class="font-blue m-b-8">Určit hranici mezi webovou stránkou
+          a webovou aplikací je často velmi obtížné. Jak to tedy je?</h2>
+        <div class="flex">
+          <div class="flex flex-1 align-center justify-end direction-column">
+            <img alt="cactus-green" class="cactus-green" src="/images/cactus-green.png" />
+            <p class="cactus-title">Webová aplikace</p>
+          </div>
+          <div class="flex flex-1 align-center justify-end direction-column">
+            <img alt="cactus-blue" class="cactus-blue" src="/images/cactus-blue.png" />
+            <p class="cactus-title">Webová stránka</p>
+          </div>
+        </div>
+      </div>
+
 
       <div class="table-flex p-t-16">
         <div class="flex table-flex-rows font-grey">
@@ -220,10 +237,12 @@
             <p>Cíl</p>
           </div>
           <div class="flex-3">
+            <strong class="web-title">Webová aplikace</strong>
             <p>Cílem webové aplikace je <strong>interakce</strong> s koncovým uživatelem (zákazníkem).</p>
           </div>
           <div class="flex-1"></div>
           <div class="flex-3">
+            <strong class="web-title">Webová stránka</strong>
             <p>Cílem webové stránky je většinou <strong>prezentace informací</strong> uživateli. </p>
           </div>
           <div class="flex-1"></div>
@@ -234,6 +253,7 @@
             <p>Funkce</p>
           </div>
           <div class="flex-3">
+            <strong class="web-title">Webová aplikace</strong>
             <p>Webová aplikace je <strong>dynamická stránka</strong>, kde může uživatel prostřednictvím různých funkcí
               vytvářet, měnit a
               sdílet obsah. </p>
@@ -241,6 +261,7 @@
           </div>
           <div class="flex-1"></div>
           <div class="flex-3">
+            <strong class="web-title">Webová stránka</strong>
             <p>Jedná se většinou o <strong>statické stránky</strong>, kde můžete číst texty nebo prohlížet videa. </p>
             <p>Většinou nemůžete vkládat různá data, k dispozici jsou pouze jednoduché formuláře jako např. sběr
               kontaktů.</p>
@@ -253,11 +274,13 @@
             <p>Ověřování</p>
           </div>
           <div class="flex-3">
+            <strong class="web-title">Webová aplikace</strong>
             <p>U webové aplikace je <strong>vyžadováno ověření</strong>, uživatel má širší možnosti než u webových
               stránek.</p>
           </div>
           <div class="flex-1"></div>
           <div class="flex-3">
+            <strong class="web-title">Webová stránka</strong>
             <p>U webových stránek může uživatel požádat o registraci za účelem přijímání aktualit. <strong>Ověřování ale
                 není pro webové stránky povinné</strong>.</p>
           </div>
@@ -269,10 +292,12 @@
             <p>Nasazení</p>
           </div>
           <div class="flex-3">
+            <strong class="web-title">Webová aplikace</strong>
             <p>Aplikace je ve srovnání s webovou stránkou složitější. <strong>Obsahuje různé funkce</strong>.</p>
           </div>
           <div class="flex-1"></div>
           <div class="flex-3">
+            <strong class="web-title">Webová stránka</strong>
             <p>Webová stránka pouze <strong>zobrazuje shromážděná data a informace</strong>.</p>
           </div>
           <div class="flex-1"></div>
@@ -283,10 +308,12 @@
             <p>Typ softwaru</p>
           </div>
           <div class="flex-3">
+            <strong class="web-title">Webová aplikace</strong>
             <p>Vývoj webové aplikace je součástí webových stránek.</p>
           </div>
           <div class="flex-1"></div>
           <div class="flex-3">
+            <strong class="web-title">Webová stránka</strong>
             <p>Webová stránka je kompletní produkt, který uživatel navštěvuje prostřednictvím webového prohlížeče.</p>
           </div>
           <div class="flex-1"></div>
@@ -298,10 +325,12 @@
             <p>Další rozvoj</p>
           </div>
           <div class="flex-3">
+            <strong class="web-title">Webová aplikace</strong>
             <p>Všechny změny, které se v aplikaci provedou požadují opětovnou překompilaci a nasazení.</p>
           </div>
           <div class="flex-1"></div>
           <div class="flex-3">
+            <strong class="web-title">Webová stránka</strong>
             <p>Malé změny nevyžadují úplnou překompliaci a nasazení. Stačí jen aktualizace HTML kódu.</p>
           </div>
           <div class="flex-1"></div>
@@ -316,18 +345,18 @@
             klíčovou otázku, na kterou byste měli znát odpověď dříve, než budete poptávat řešit samotný vývoj. Pokud si
             odpovíte na otázky níže, určitě vám to pomůže k ujasnění vašich požadavků.</h3>
         </div>
-        <div class="flex ">
-          <div class="flex direction-column flex-1 align-center">
-            <img alt="like-img" class="helper-img m-b-8" src="/images/ico-like.png" />
+        <div class="flex icon-box">
+          <div class="flex direction-column flex-1 align-center m-r-2 single-icon-box">
+            <img alt="like-img" class="helper-img m-b-8 " src="/images/ico-like.png" />
             <h2 class="font-blue">Kolik interakce od svých zákazníků (uživatelů) očekávám?</h2>
           </div>
 
-          <div class="flex direction-column flex-1 align-center">
+          <div class="flex direction-column flex-1 align-center m-r-2 single-icon-box">
             <img alt="like-img" class="helper-img m-b-8" src="/images/ico-diamond.png" />
             <h2 class="font-blue">Jsem připraven/a převzít zodpovědnost za data o svých zákaznících?</h2>
           </div>
 
-          <div class="flex direction-column flex-1 align-center">
+          <div class="flex direction-column flex-1 align-center single-icon-box">
             <img alt="like-img" class="helper-img m-b-8" src="/images/ico-bolt.png" />
             <h2 class="font-blue">Můžete zajistit požadovanou úroveň zabezpečení?</h2>
           </div>
