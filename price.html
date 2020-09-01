@@ -1,246 +1,323 @@
 <!DOCTYPE html>
 <html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/bvk7ryi.css" />
+    <link href="styles/main.css" rel="stylesheet" />
+    <link href="styles/_navButton.css" rel="stylesheet" />
+    <link href="styles/_phaseBox.css" rel="stylesheet" />
+    <link href="styles/_technology.css" rel="stylesheet" />
 
-  <link rel="stylesheet" href="https://use.typekit.net/bvk7ryi.css" />
-  <link href="styles/main.css" rel="stylesheet" />
-  <link href="styles/_navButton.css" rel="stylesheet" />
-  <link href="styles/_phaseBox.css" rel="stylesheet" />
-  <link href="styles/_technology.css" rel="stylesheet" />
+    <title>iQuest</title>
+  </head>
 
+  <body>
+    <div class="p-b-16">
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
 
-  <title>iQuest</title>
-</head>
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
 
-<body>
-  <div class="p-b-16">
-    <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+        <div class="navigation__background">&nbsp;</div>
 
-      <label for="navi-toggle" class="navigation__button">
-        <span class="navigation__icon">&nbsp;</span>
-      </label>
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="/" class="navigation__link" onClick="handleChange()"
+                >Co je webová aplikace?</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="/process.html" class="navigation__link">Proces vývoje</a>
+            </li>
+            <li class="navigation__item">
+              <a href="/technology.html" class="navigation__link"
+                >Technologie</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="/price.html" class="navigation__link">Cena</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Chci appku</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-      <div class="navigation__background">&nbsp;</div>
-
-      <nav class="navigation__nav">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="/" class="navigation__link" onClick="handleChange()">Co je webová aplikace?</a>
-          </li>
-          <li class="navigation__item">
-            <a href="/process.html" class="navigation__link">Proces vývoje</a>
-          </li>
-          <li class="navigation__item">
-            <a href="/technology.html" class="navigation__link">Technologie</a>
-          </li>
-          <li class="navigation__item">
-            <a href="/price.html" class="navigation__link">Cena</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Chci appku</a>
-          </li>
-        </ul>
+      <nav class="flex p-t-8 font-grey align-center font-media opacity-0-media">
+        <div class="flex-1 flex-0-media"></div>
+        <img alt="logo" class="flex-1" src="images/logo-black.svg" />
+        <a href="/" class="link flex-1 text-center pointer"
+          >Co je webová aplikace?</a
+        >
+        <a href="/process.html" class="link flex-1 text-center pointer"
+          >Proces vývoje</a
+        >
+        <a href="/technology.html" class="link flex-1 text-center pointer"
+          >Technologie</a
+        >
+        <a class="link-active flex-1 text-center pointer">Cena</a>
+        <div class="flex-1">
+          <button class="btn-blue font-white pointer">Chci appku</button>
+        </div>
+        <div class="flex-1 flex-0-media"></div>
       </nav>
     </div>
 
-
-
-    <nav class="flex p-t-8 font-grey align-center font-media opacity-0-media">
-      <div class="flex-1 flex-0-media"></div>
-      <img alt="logo" class="flex-1" src="images/logo-black.svg" />
-      <a href='/' class="link flex-1 text-center pointer">Co je webová aplikace?</a>
-      <a href='/process.html' class="link flex-1 text-center pointer">Proces vývoje</a>
-      <a href='/technology.html' class="link flex-1 text-center pointer">Technologie</a>
-      <a class="link-active flex-1 text-center pointer">Cena</a>
-      <div class="flex-1">
-        <button class="btn-blue font-white pointer">
-          Chci appku
-        </button>
+    <div class="width-80 m-auto relative">
+      <div class="rotated-text-price flex align-center justify-center">
+        <div class="blue-line m-r-8">&nbsp;</div>
+        <p>Cena</p>
       </div>
-      <div class="flex-1 flex-0-media"></div>
-    </nav>
-  </div>
+      <h4 class="font-blue width-80 m-auto p-b-16 price-h4">
+        Pokud zadáte do vyhledávače výraz “cena webové aplikace” nedostane se
+        vám jasné odpovědi… A tak je to správně. Proč?
+      </h4>
 
+      <!-- styling in technology folder -->
 
-  <div class="width-80 m-auto relative">
-    <div class="rotated-text flex align-center justify-center">
-      <div class="blue-line m-r-8">&nbsp;</div>
-      <p>Cena</p>
-    </div>
-    <h4 class="font-blue width-80 m-auto p-b-16">
-      Pokud zadáte do vyhledávače výraz “cena webové aplikace” nedostane se vám jasné odpovědi… A tak je to správně.
-      Proč?
-    </h4>
-
-
-    <!-- styling in technology folder -->
-
-    <div class="font-grey width-80 m-auto flex">
-      <div class="column">Každý podnikatel, který zvažuje potřebu webové aplikace a vyhodnocuje tuto investici,
-        potřebuje
-        znát náklady na vývoj této aplikace.
-        Pokud má vývojářská agentura na svých stránkách zveřejněnou cenu za webovou aplikaci, aniž by znala požadavky
-        zákazníka, moc tomuto odhadu nevěřte.
-      </div>
-      <div class="column">Stanovit cenu aplikace odhadem bez znalostí konkrétních informací zkrátka nelze. Vždy je třeba
-        specifikovat přesné požadavky. Je to jako se stavbou domu. Jeho výsledná cena také závisí na počtu pokojů,
-        celkové
-        výměře, materiálu střechy apod. Bez těchto informací vám stavební firma stavbu domu nenacení.
+      <div class="font-grey width-80 m-auto flex price-title-text">
+        <div class="column">
+          Každý podnikatel, který zvažuje potřebu webové aplikace a vyhodnocuje
+          tuto investici, potřebuje znát náklady na vývoj této aplikace. Pokud
+          má vývojářská agentura na svých stránkách zveřejněnou cenu za webovou
+          aplikaci, aniž by znala požadavky zákazníka, moc tomuto odhadu
+          nevěřte.
+        </div>
+        <div class="column">
+          Stanovit cenu aplikace odhadem bez znalostí konkrétních informací
+          zkrátka nelze. Vždy je třeba specifikovat přesné požadavky. Je to jako
+          se stavbou domu. Jeho výsledná cena také závisí na počtu pokojů,
+          celkové výměře, materiálu střechy apod. Bez těchto informací vám
+          stavební firma stavbu domu nenacení.
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="width-80 m-auto price-box-margin-med">
-    <div class="flex width-80 m-auto">
-      <div class="flex flex-1 direction-column">
-
-        <h4>Hlavní faktory, které ovlivňují výslednou cenu vývoje webové aplikace, jsou tyto</h4>
-        <img alt='meter' class="img-price" src="/images/meter.png" style="z-index: 2;" />
-
-      </div>
-
-
-
-      <div class="flex flex-1 direction-column">
-
-        <div
-          class="flex align-center price-list-boxes direction-column background-white justify-center price-box-margin-big ">
-          <img alt="img-01" class="app-icon-number m-b-8" src="/images/01.svg" />
-          <div class="flex direction-column">
-            <h5>První diskuse nad projektem</h5>
-            <p class="font-grey">
-              Před začátkem návrhu aplikace je nutné znát podrobně zákazníka a jeho produkt, cíle tohoto produktu a
-              hlavně koncového uživatele, který bude webovou aplikaci používat.
-            </p>
-          </div>
+    <div class="width-80 m-auto price-box-margin-med">
+      <div class="flex width-80 m-auto">
+        <div class="flex flex-1 direction-column">
+          <h4>
+            Hlavní faktory, které ovlivňují výslednou cenu vývoje webové
+            aplikace, jsou tyto
+          </h4>
+          <img
+            alt="meter"
+            class="img-price"
+            src="/images/meter.png"
+            style="z-index: 2"
+          />
         </div>
 
+        <div class="flex flex-1 direction-column">
+          <div
+            class="flex align-center price-list-boxes direction-column background-white justify-center price-box-margin-big"
+          >
+            <img
+              alt="img-01"
+              class="app-icon-number m-b-8"
+              src="/images/01.svg"
+            />
+            <div class="flex direction-column">
+              <h5>První diskuse nad projektem</h5>
+              <p class="font-grey">
+                Před začátkem návrhu aplikace je nutné znát podrobně zákazníka a
+                jeho produkt, cíle tohoto produktu a hlavně koncového uživatele,
+                který bude webovou aplikaci používat.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
 
+    <div class="width-80 m-auto">
+      <div class="flex direction-column width-80 m-auto">
+        <div class="flex align-center justify-center first-price-box">
+          <div
+            class="flex align-center direction-column background-white justify-center price-list-boxes price-box-margin-med"
+          >
+            <img
+              alt="img-02"
+              class="app-icon-number m-b-8"
+              src="/images/02.svg"
+            />
+            <div class="flex direction-column">
+              <h5>Technologická náročnost</h5>
+              <p class="font-grey">
+                Implementace technicky náročných funkcí je dražší, než běžné
+                funkce.
+              </p>
+            </div>
+          </div>
+          <img alt="building" class="img-building" src="/images/building.png" />
+        </div>
 
-  <div class="width-80 m-auto">
-    <div class="flex direction-column width-80 m-auto">
+        <div class="flex align-center justify-center relative">
+          <img
+            alt="buildings"
+            class="img-building"
+            src="/images/houses.png"
+            style="z-index: 3"
+          />
+          <img alt="ball" class="ball-green" src="/images/ball-green.png" />
+          <div
+            class="flex align-center price-list-boxes direction-column background-white justify-center"
+          >
+            <img
+              alt="img-03"
+              class="app-icon-number m-b-8"
+              src="/images/03.svg"
+            />
+            <div class="flex direction-column">
+              <h5>UX/UI design</h5>
+              <p class="font-grey">
+                Pokud chcete design, který je navržený zcela na míru vašeho
+                zákazníka, bude to sice cenově náročnější, ale také efektivnější
+                varianta. Zajistíte tak, že zákazník snadno a rychle dosáhne
+                nejen svého cíle, který jej k vaší aplikaci přivedl. Ale také
+                zároveň splní cíle, které jste si stanovili vy, jako vlastníci
+                aplikace.
+              </p>
+            </div>
+          </div>
+        </div>
 
-      <div class="flex align-center justify-center first-price-box">
         <div
-          class="flex align-center direction-column background-white justify-center price-list-boxes price-box-margin-med ">
-          <img alt="img-02" class="app-icon-number m-b-8" src="/images/02.svg" />
-          <div class="flex direction-column">
-            <h5>Technologická náročnost</h5>
-            <p class="font-grey">
-              Implementace technicky náročných funkcí je dražší, než běžné funkce.
-            </p>
+          class="flex align-center justify-center price-box-margin-med relative"
+        >
+          <div
+            class="flex flex-1 align-center direction-column background-white justify-center price-list-boxes price-box-margin-md"
+          >
+            <img
+              alt="img-04"
+              class="app-icon-number m-b-8"
+              src="/images/04.svg"
+            />
+            <img alt="ball" class="ball-grey" src="/images/ball-grey.png" />
+            <div class="flex direction-column">
+              <h5>Dodací lhůta</h5>
+              <p class="font-grey">
+                Práce ve spěchu je většinou spojená s vyšší cenou vývoje. Proč?
+                Protože společnost musí v danou chvíli na vývojový proces
+                vynaložit více prostředků. S příliš krátkými dodacími termíny je
+                také spojen vyšší nárok na efektivitu řízení projektu, aby
+                nevznikaly chyby.
+              </p>
+            </div>
           </div>
-        </div>
-        <img alt='building' class="img-building" src="/images/building.png" />
-      </div>
-
-      <div class="flex align-center justify-center relative">
-        <img alt='buildings' class="img-building " src="/images/houses.png" style="z-index: 3;" />
-        <img alt="ball" class="ball-green" src="/images/ball-green.png" />
-        <div class="flex align-center price-list-boxes direction-column background-white justify-center ">
-          <img alt="img-03" class="app-icon-number m-b-8" src="/images/03.svg" />
-          <div class="flex direction-column">
-            <h5>UX/UI design</h5>
-            <p class="font-grey">
-              Pokud chcete design, který je navržený zcela na míru vašeho zákazníka, bude to sice cenově náročnější, ale
-              také efektivnější varianta. Zajistíte tak, že zákazník snadno a rychle dosáhne nejen svého cíle, který jej
-              k vaší aplikaci přivedl. Ale také zároveň splní cíle, které jste si stanovili vy, jako vlastníci aplikace.
-            </p>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="flex align-center justify-center price-box-margin-med relative">
-        <div
-          class="flex flex-1 align-center direction-column background-white justify-center price-list-boxes price-box-margin-md">
-          <img alt="img-04" class="app-icon-number m-b-8" src="/images/04.svg" />
-          <img alt="ball" class="ball-grey" src="/images/ball-grey.png" />
-          <div class="flex direction-column">
-            <h5>Dodací lhůta</h5>
-            <p class="font-grey">
-              Práce ve spěchu je většinou spojená s vyšší cenou vývoje. Proč? Protože společnost musí v danou chvíli na
-              vývojový proces vynaložit více prostředků. S příliš krátkými dodacími termíny je také spojen vyšší nárok
-              na efektivitu řízení projektu, aby nevznikaly chyby.
-            </p>
-          </div>
-        </div>
-        <div class="flex-1">
-          <img alt='hours' class="img-hours" src="/images/hours.png" style="z-index: 3;" />
-        </div>
-      </div>
-
-
-      <div class="flex align-center justify-center price-box-margin-med">
-        <div class="flex-1 m-l-12">
-          <img alt='bowl' class="img-hours" src="/images/bowl.png" style="z-index: 3;" />
-        </div>
-        <div
-          class="flex flex-1 align-center direction-column background-white justify-center price-list-boxes price-box-margin-md">
-          <img alt="img-05" class="app-icon-number m-b-8" src="/images/05.svg" />
-          <div class="flex direction-column">
-            <h5>Dodací lhůta</h5>
-            <p class="font-grey">
-              Práce ve spěchu je většinou spojená s vyšší cenou vývoje. Proč? Protože společnost musí v danou chvíli na
-              vývojový proces vynaložit více prostředků. S příliš krátkými dodacími termíny je také spojen vyšší nárok
-              na efektivitu řízení projektu, aby nevznikaly chyby.
-            </p>
+          <div class="flex-1">
+            <img
+              alt="hours"
+              class="img-hours"
+              src="/images/hours.png"
+              style="z-index: 3"
+            />
           </div>
         </div>
 
-      </div>
-
-
-      <div class="flex align-center justify-center price-box-margin-med">
-        <div
-          class="flex flex-1 align-center direction-column background-white justify-center price-list-boxes price-box-margin-md">
-          <img alt="img-06" class="app-icon-number m-b-8" src="/images/06.svg" />
-          <div class="flex direction-column">
-            <h5>Dodací lhůta</h5>
-            <p class="font-grey">
-              Práce ve spěchu je většinou spojená s vyšší cenou vývoje. Proč? Protože společnost musí v danou chvíli na
-              vývojový proces vynaložit více prostředků. S příliš krátkými dodacími termíny je také spojen vyšší nárok
-              na efektivitu řízení projektu, aby nevznikaly chyby.
-            </p>
+        <div class="flex align-center justify-center price-box-margin-med">
+          <div class="flex-1 m-l-12">
+            <img
+              alt="bowl"
+              class="img-hours"
+              src="/images/bowl.png"
+              style="z-index: 3"
+            />
+          </div>
+          <div
+            class="flex flex-1 align-center direction-column background-white justify-center price-list-boxes price-box-margin-md"
+          >
+            <img
+              alt="img-05"
+              class="app-icon-number m-b-8"
+              src="/images/05.svg"
+            />
+            <div class="flex direction-column">
+              <h5>Dodací lhůta</h5>
+              <p class="font-grey">
+                Práce ve spěchu je většinou spojená s vyšší cenou vývoje. Proč?
+                Protože společnost musí v danou chvíli na vývojový proces
+                vynaložit více prostředků. S příliš krátkými dodacími termíny je
+                také spojen vyšší nárok na efektivitu řízení projektu, aby
+                nevznikaly chyby.
+              </p>
+            </div>
           </div>
         </div>
-        <div class="flex-1">
-          <img alt='hours' class="img-phone" src="/images/phone.png" style="z-index: 3;" />
+
+        <div class="flex align-center justify-center price-box-margin-med">
+          <div
+            class="flex flex-1 align-center direction-column background-white justify-center price-list-boxes price-box-margin-md"
+          >
+            <img
+              alt="img-06"
+              class="app-icon-number m-b-8"
+              src="/images/06.svg"
+            />
+            <div class="flex direction-column">
+              <h5>Dodací lhůta</h5>
+              <p class="font-grey">
+                Práce ve spěchu je většinou spojená s vyšší cenou vývoje. Proč?
+                Protože společnost musí v danou chvíli na vývojový proces
+                vynaložit více prostředků. S příliš krátkými dodacími termíny je
+                také spojen vyšší nárok na efektivitu řízení projektu, aby
+                nevznikaly chyby.
+              </p>
+            </div>
+          </div>
+          <div class="flex-1">
+            <img
+              alt="hours"
+              class="img-phone"
+              src="/images/phone.png"
+              style="z-index: 3"
+            />
+          </div>
         </div>
       </div>
-
     </div>
-  </div>
 
-
-
-  <div class="footer p-t-16 m-t-20">
-    <h2 class="width-80 title-footer weight-400">
-      Kam jít dál?
-    </h2>
-    <div class="width-80 m-auto flex direction-column footer-add">
-      <div class="flex-2 relative m-l-2">
-        <a href='/' class="flex align-start stroke-text">Co je webová aplikace?</a>
-        <img alt="+" class="flex align-start m-b-0 position-plus" src="/images/plus.svg" />
-      </div>
-      <div class="flex-2 relative">
-        <a href='/process.html' class="flex align-start stroke-text">Proces vývoje</a>
-        <img alt="+" class="flex align-start m-b-0 position-plus" src="/images/plus.svg" />
-      </div>
-      <div class="flex-2 relative m-l-2">
-        <a href='/technology.html' class="flex align-start stroke-text">Technologie</a>
-        <img alt="+" class="flex align-start m-b-0 position-plus" src="/images/plus.svg" />
+    <div class="footer p-t-16 m-t-20">
+      <h2 class="width-80 title-footer weight-400">Kam jít dál?</h2>
+      <div class="width-80 m-auto flex direction-column footer-add">
+        <div class="flex-2 relative m-l-2">
+          <a href="/" class="flex align-start stroke-text"
+            >Co je webová aplikace?</a
+          >
+          <img
+            alt="+"
+            class="flex align-start m-b-0 position-plus"
+            src="/images/plus.svg"
+          />
+        </div>
+        <div class="flex-2 relative">
+          <a href="/process.html" class="flex align-start stroke-text"
+            >Proces vývoje</a
+          >
+          <img
+            alt="+"
+            class="flex align-start m-b-0 position-plus"
+            src="/images/plus.svg"
+          />
+        </div>
+        <div class="flex-2 relative m-l-2">
+          <a href="/technology.html" class="flex align-start stroke-text"
+            >Technologie</a
+          >
+          <img
+            alt="+"
+            class="flex align-start m-b-0 position-plus"
+            src="/images/plus.svg"
+          />
+        </div>
       </div>
     </div>
-  </div>
-  <script src='scripts/main.js'></script>
-</body>
-
+    <script src="scripts/main.js"></script>
+  </body>
 </html>

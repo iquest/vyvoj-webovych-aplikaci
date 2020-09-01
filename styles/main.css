@@ -45,6 +45,11 @@ h5 {
 }
 
 /* Other classes */
+.all-0{
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
 .align-center {
   align-items: center;
 }
@@ -71,6 +76,10 @@ h5 {
   align-self: flex-start;
   width: 17rem;
   margin: 0 auto;
+}
+
+.img-star{
+  width: 25%;
 }
 
 .size-100 {
@@ -250,12 +259,15 @@ margin-top: 18rem;
   margin-top: 3rem;
   margin-bottom: 4rem;
   width: 80%;
+}
 
+.cactus-text-small{
+  display: none;
 }
 
 .column {
   flex: 0 0 50%;
-  margin-right: 2rem;
+  margin-right: 4rem;
 }
 
 .img-cactus {
@@ -466,6 +478,10 @@ transition: all 0.2s;
   margin: auto;
 }
 
+.m-b-2{
+  margin-bottom: 1rem;
+}
+
 .m-b-4 {
   margin-bottom: 2rem;
 }
@@ -589,6 +605,10 @@ transition: all 0.2s;
   margin-top: 6rem;
   }
 
+  .cactus-text{
+    width: 90%;
+  }
+
   .font-info {
     width: 70%;
   }
@@ -615,6 +635,7 @@ transition: all 0.2s;
 
   h3{
     font-size: 2rem;
+    line-height: 3.3rem;
   }
 
   .app-icon-plane{
@@ -625,15 +646,6 @@ transition: all 0.2s;
     margin-left: 2rem;
     width: 11rem;
   }
-
-  .advantage-styles {
-    flex-wrap: nowrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-
-
 
 .cactus-box {
   margin-top: 4rem;
@@ -648,6 +660,10 @@ transition: all 0.2s;
     width: 90%;
   }
 
+  .cactus-text{
+    width: 100%;
+  }
+
   .img-cactus{
     width: 50%;
     height: auto;
@@ -656,9 +672,31 @@ transition: all 0.2s;
     width: 70%;
   }
 
+  .advantage-styles{
+    justify-content: center;
+  }
+
+
   .home-list-title{
     text-align: center;
     width: 89%;
+  }
+
+  .home-list-position {
+    margin-left: 6rem;
+  }
+
+  .home-list-boxes{
+    width: 22.9rem;
+  }
+
+  .home-list {
+margin-right: 0;
+  }
+
+  .img-05{
+    right: 0rem;
+    width: 38rem;
   }
 
 
@@ -757,6 +795,23 @@ transition: all 0.2s;
     margin: 0;
   }
 
+
+  .cactus-text{
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+    margin-left: -7%;
+    width: 110%;
+  }
+
+  .cactus-sm-screen{
+    margin-left: -7%;
+    width: 110%;
+  }
+
+  .column {
+    margin-bottom: 1rem;
+  }
+
   .helper-img {
     height: 12rem;
 }
@@ -824,6 +879,26 @@ transition: all 0.2s;
 @media only screen and (max-width: 550px) {
   h1 {
     font-size: 4.2rem;
+  }
+
+  h4{
+    font-size: 3.6rem;
+  }
+
+  .advantage-styles {
+    flex-wrap: nowrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .cactus-text-small{
+    display: block;
+    flex-direction: column;
+  }
+
+  .hide-cactus-text{
+    display: none;
   }
 
   .font-footer {
@@ -933,6 +1008,15 @@ transition: all 0.2s;
       linear-gradient(to right, #e2f1fa62 82%, #b9c6d9 92%);
   }
 
+  .cactus-text {
+    font-size: 1.3rem;
+  }
+
+  .column {
+    margin-bottom: 1rem;
+    margin-right: 0rem;
+  }
+
   .p-t-16 {
     padding-top: 2rem;
   }
@@ -953,6 +1037,10 @@ transition: all 0.2s;
     font-size: 1.4rem;
   }
 
+  h4{
+    font-size: 2.6rem;
+  }
+
   h5 {
     font-size: 1.55rem;
   }
@@ -964,6 +1052,29 @@ transition: all 0.2s;
   .font-title {
     font-size: 1.1rem;
   }
+
+  .app-icon-number {
+    margin-bottom: 1rem;
+    width: 5rem;
+}
+  .home-list-title {
+    width: 105%;
+    margin-bottom: 4rem;
+  }
+  .home-list-position {
+    margin-left: 2rem;
+  }
+  .home-list-boxes {
+    font-size: 1.4rem;
+    margin-right: 0;
+    width: 17.9rem;
+}
+
+  .img-05 {
+    width: 11rem;
+  }
+
+
 }
 
 @media only screen and (max-width: 350px) {
