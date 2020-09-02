@@ -1,323 +1,450 @@
 <!DOCTYPE html>
 <html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/bvk7ryi.css" />
+    <link href="styles/main.css" rel="stylesheet" />
+    <link href="styles/_navButton.css" rel="stylesheet" />
+    <link href="styles/_technology.css" rel="stylesheet" />
+    <link href="styles/_processTab.css" rel="stylesheet" />
 
-  <link rel="stylesheet" href="https://use.typekit.net/bvk7ryi.css" />
-  <link href="styles/main.css" rel="stylesheet" />
-  <link href="styles/_navButton.css" rel="stylesheet" />
-  <link href="styles/_phaseBox.css" rel="stylesheet" />
+    <title>iQuest</title>
+  </head>
 
+  <body>
+    <div class="p-b-16">
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
 
-  <title>iQuest</title>
-</head>
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
 
-<body>
-  <div class="p-b-16">
-    <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+        <div class="navigation__background">&nbsp;</div>
 
-      <label for="navi-toggle" class="navigation__button">
-        <span class="navigation__icon">&nbsp;</span>
-      </label>
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="/" class="navigation__link" onClick="handleChange()"
+                >Co je webová aplikace?</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="/process.html" class="navigation__link">Proces vývoje</a>
+            </li>
+            <li class="navigation__item">
+              <a href="/technology.html" class="navigation__link"
+                >Technologie</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="/price.html" class="navigation__link">Cena</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Chci appku</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-      <div class="navigation__background">&nbsp;</div>
-
-      <nav class="navigation__nav">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="/" class="navigation__link" onClick="handleChange()">Co je webová aplikace?</a>
-          </li>
-          <li class="navigation__item">
-            <a href="/process.html" class="navigation__link">Proces vývoje</a>
-          </li>
-          <li class="navigation__item">
-            <a href="/technology.html" class="navigation__link">Technologie</a>
-          </li>
-          <li class="navigation__item">
-            <a href="/price.html" class="navigation__link">Cena</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Chci appku</a>
-          </li>
-        </ul>
+      <nav class="flex p-t-8 font-grey align-center font-media opacity-0-media">
+        <div class="flex-1 flex-0-media"></div>
+        <img alt="logo" class="flex-1" src="images/logo-black.svg" />
+        <a href="/" class="link flex-1 text-center pointer"
+          >Co je webová aplikace?</a
+        >
+        <a href="/process.html" class="link-active flex-1 text-center pointer"
+          >Proces vývoje</a
+        >
+        <a href="/technology.html" class="link flex-1 text-center pointer"
+          >Technologie</a
+        >
+        <a href="/price.html" class="link flex-1 text-center pointer">Cena</a>
+        <div class="flex-1">
+          <button class="btn-blue font-white pointer">Chci appku</button>
+        </div>
+        <div class="flex-1 flex-0-media"></div>
       </nav>
     </div>
 
-
-
-    <nav class="flex p-t-8 font-grey align-center font-media opacity-0-media">
-      <div class="flex-1 flex-0-media"></div>
-      <img alt="logo" class="flex-1" src="images/logo-black.svg" />
-      <a href='/' class="link flex-1 text-center pointer">Co je webová aplikace?</a>
-      <a href='/process.html' class="link-active flex-1 text-center pointer">Proces vývoje</a>
-      <a href='/technology.html' class="link flex-1 text-center pointer">Technologie</a>
-      <a href='/price.html' class="link flex-1 text-center pointer">Cena</a>
-      <div class="flex-1">
-        <button class="btn-blue font-white pointer">
-          Chci appku
-        </button>
+    <div class="width-80 m-auto relative">
+      <div class="rotated-text flex align-center justify-center">
+        <div class="blue-line m-r-8">&nbsp;</div>
+        <p>Proces vývoje</p>
       </div>
-      <div class="flex-1 flex-0-media"></div>
-    </nav>
-  </div>
-
-
-  <div class="width-80 m-auto relative">
-    <div class="rotated-text flex align-center justify-center">
-      <div class="blue-line m-r-8">&nbsp;</div>
-      <p>Proces vývoje</p>
-    </div>
-    <h4 class="font-blue width-80 m-auto padding-title">
-      Skutečnost, že budete znát všechny fáze vývoje webové aplikace, přispěje velkou měrou k tomu, aby váš projekt byl
-      úspěšný. Pomůže vám to také porozumět nákladům, které na vývoj aplikace vynaložíte.
-    </h4>
-  </div>
-
-
-
-  <div class="home-list relative process__list">
-    <img alt='triangle' class="img-triangle" src="/images/rectangle.png" />
-    <div class="home-list-position">
-      <h4 class="m-b-16">
-        Jednotlivé fáze vývoje aplikace by měly být následující
+      <h4 class="font-blue width-80 m-auto padding-title">
+        Skutečnost, že budete znát všechny fáze vývoje webové aplikace, přispěje
+        velkou měrou k tomu, aby váš projekt byl úspěšný. Pomůže vám to také
+        porozumět nákladům, které na vývoj aplikace vynaložíte.
       </h4>
-
-      <div class="advantage-styles relative">
-
-        <img class="path path1" src="/images/Path1.svg" />
-
-
-        <div class="flex align-center home-list-boxes direction-column background-white justify-center">
-          <img alt="img-01" class="app-icon-number m-b-8" src="/images/01.svg" />
-          <div class="flex direction-column">
-            <h5>První diskuse nad projektem</h5>
-            <p class="font-grey">
-              Před začátkem návrhu aplikace je nutné znát podrobně zákazníka a jeho produkt, cíle tohoto produktu a
-              hlavně koncového uživatele, který bude webovou aplikaci používat.
-            </p>
-          </div>
-        </div>
-
-        <img class="path path2" src="/images/Path2.svg" />
-
-        <div class="flex align-center home-list-boxes direction-column background-white justify-center box box2">
-          <img alt="img-02" class="app-icon-number m-b-8" src="/images/02.svg" />
-          <div class="flex direction-column">
-            <h5>Analýza požadavků a zadání</h5>
-            <p class="font-grey">
-              Na základě předchozí diskuze vyplynou nějaké požadavky na funkce a informace, které by měla mobilní
-              aplikace obsahovat. Vytvoří se tedy návrh zadání, který se opět diskutuje se zákazníkem.
-            </p>
-          </div>
-        </div>
-
-
-        <img class="path path3" src="/images/Path3.svg" />
-
-
-        <div class="flex align-center home-list-boxes direction-column background-white justify-center box box3">
-          <img alt="img-03" class="app-icon-number m-b-8" src="/images/03.svg" />
-          <div class="flex direction-column">
-            <h5>Určení časové osy a odhad nákladů</h5>
-            <p class="font-grey">
-              Na základě vytvořeného zadání se stanoví odhad rozpočtu na vývoj aplikace a přibližný čas strávený na
-              vývoji.
-            </p>
-          </div>
-        </div>
-
-        <img class="path path4" src="/images/Path4.svg" />
-
-        <div class="flex align-center home-list-boxes direction-column background-white justify-center box box4">
-          <img alt="img-04" class="app-icon-number m-b-8" src="/images/04.svg" />
-          <div class="flex direction-column">
-            <h5>Návrh architektury aplikace, koncepce
-              a UX design</h5>
-            <p class="font-grey">
-              Webové aplikace jsou zároveň flexibilní a je možné k nim přistupovat z jakéhokoliv zařízení (mobilní
-              telefon, tablet, PC..) i prohlížeče.
-            </p>
-          </div>
-        </div>
-
-        <img class="path path5" src="/images/Path5.svg" />
-
-        <div class="flex align-center home-list-boxes direction-column background-white justify-center box box5">
-          <img alt="img-05" class="app-icon-number m-b-8" src="/images/05.svg" />
-          <div class="flex direction-column">
-            <h5>Grafický
-              design</h5>
-            <p class="font-grey">
-              Grafik na základě požadavků klienta, korporátních barev a typu produktu navrhuje design, který nejvíce
-              vystihuje charakter produktu.
-            </p>
-          </div>
-        </div>
-
-        <img class="path path6" src="/images/Path6.svg" />
-
-        <div class="flex align-center home-list-boxes direction-column background-white justify-center box box6">
-          <img alt="img-06" class="app-icon-number m-b-8" src="/images/06.svg" />
-          <div class="flex direction-column">
-            <h5>Vývoj</h5>
-            <p class="font-grey">
-              V této fázi tým vývojářů vytváří rámec webové aplikace, navrhuje strukturu databáze, vyvíjí modul, třídy a
-              knihovny a implementuje všechny funkce uvedené v souhrnné dokumentaci.
-            </p>
-          </div>
-        </div>
-
-        <img class="path path7" src="/images/Path7.svg" />
-
-        <div class="flex align-center home-list-boxes direction-column background-white justify-center box box7">
-          <img alt="img-07" class="app-icon-number m-b-8" src="/images/07.svg" />
-          <div class="flex direction-column">
-            <h5>Fáze testování</h5>
-            <p class="font-grey">
-              Předposledním krokem v procesu vývoje webových aplikací je testování kvality a oprava případných chyb.
-              Aplikace by vždy měla projít zátěžovým testováním, testováním všech funkcí a uživatelského prostředí.
-            </p>
-          </div>
-        </div>
-
-
-        <div class="flex align-center home-list-boxes direction-column background-white">
-          <img alt="img-08" class="app-icon-number m-b-8" src="/images/08.svg" />
-          <div class="flex direction-column">
-            <h5>Fáze zavádění
-              a postrodukce</h5>
-            <p class="font-grey">
-              Dobře otestovaná aplikace je připravena k nasazení. Často je u webových aplikací i po nasazení potřeba
-              součinnost vývojářů ve formě technické podpory, zaškolení atd.
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </div>
-  </div>
-
-
-  <div class="m-t-16 cactus-box m-auto">
-
-    <h4>
-      Metodiky vývoje
-    </h4>
-
-    <div class="flex process__settings-box">
-      <img alt="settings-big" class="img-big-settings" src="/images/big-settings.png" />
-      <div class="font-grey cactus-text flex">
-        <div class="column m-r-14">
-          <h2 class="font-blue h2-big">Agilní vývoj</h2>
-          Jedná se o více flexibilní model. U této metodiky zákazník upravuje zadání webové aplikace v průběhu prací
-          tak, aby dle reálně fungujících částí aplikace mohl ovlivňovat funkcionalitu modelů. Funguje to tedy tak, že
-          se stanoví plán práce vždy jen na několik týdnů dopředu (tzv. sprint). Před každým sprintem má zákazník
-          možnost se s vývojáři domluvit na tom, co bude náplní daného sprintu. Tedy například na jaké části aplikace,
-          nebo funkcionalitě se bude v dané období pracovat.
-        </div>
-        <div class="column">
-          <h2 class="font-blue h2-big">
-            Vodopádový model
-          </h2>U této metodiky pracuje vývojářská agentura vždy s přesně specifikovaným zadáním celé aplikace. To
-          znamená, že již na začátku vývoje jsou známy veškeré požadavky zákazníka a také výsledná cena aplikace. Před
-          touto specifikací probíhá analýza všech požadavků. Ve výsledné specifikaci jsou přesně rozvrženy fáze
-          projektu, které vedou ke splnění cíle.
-        </div>
-      </div>
     </div>
 
-    <div class="table-flex p-t-16">
-      <div class="flex table-flex-rows font-grey">
-        <div class="flex-4 table-head">
-          <p>Pracovní proces</p>
-        </div>
-        <div class="flex-3">
-          <p>Agilní řízení rozděluje proces vývoje aplikace do několika sprintů. Každý sprint musí být dokončen a
-            schválen klientem, než se vývoj pustí do dalšího.</p>
-        </div>
-        <div class="flex-1"></div>
-        <div class="flex-3">
-          <p>Existuje jen jeden vývojový cyklus. Projekt není rozdělený do několika sprintů. Vývojáři získají požadavky
-            od klienta a začnou pracovat na celém projektu. </p>
-        </div>
-        <div class="flex-1"></div>
-      </div>
+    <div class="home-list relative process__list">
+      <img alt="triangle" class="img-triangle" src="/images/rectangle.png" />
+      <div class="home-list-position">
+        <h4 class="m-b-16">
+          Jednotlivé fáze vývoje aplikace by měly být následující
+        </h4>
 
-      <div class="flex table-flex-rows font-grey">
-        <div class="flex-4 table-head">
-          <p>Flexibilita</p>
+        <div class="advantage-styles flex direction-column relative">
+          <div class="step step--1 relative">
+            <img
+              alt="one"
+              class="step__numeric-image img-one absolute"
+              src="/images/1.svg"
+            />
+            <img
+              alt="bubble"
+              class="step__graphical-image absolute"
+              src="/images/bubble.png"
+            />
+            <div class="step__body absolute">
+              <img alt="<step one" src="/images/01.svg" class="step__number" />
+              <h5>První diskuse nad projektem</h5>
+              <p class="font-grey">
+                Před začátkem návrhu aplikace je nutné znát podrobně zákazníka a
+                jeho produkt, cíle tohoto produktu a hlavně koncového uživatele,
+                který bude webovou aplikaci používat.
+              </p>
+            </div>
+            <span class="step__dot absolute"></span>
+          </div>
+          <div class="step step--2 relative">
+            <img
+              alt="two"
+              class="step__numeric-image absolute"
+              src="/images/2.svg"
+            />
+            <img
+              alt="note block"
+              class="step__graphical-image absolute"
+              src="/images/note-block.png"
+            />
+            <div class="step__body absolute">
+              <img alt="<step two" src="/images/02.svg" class="step__number" />
+              <h5>Analýza požadavků a návrh zadání</h5>
+              <p class="font-grey">
+                Na základě předchozí diskuze vyplynou nějaké požadavky na funkce
+                a informace, které by měla mobilní aplikace obsahovat. Vytvoří
+                se tedy návrh zadání, který se opět diskutuje se zákazníkem.
+              </p>
+            </div>
+            <span class="step__dot absolute"></span>
+          </div>
+          <div class="step step--3 relative">
+            <img
+              alt="three"
+              class="step__numeric-image absolute"
+              src="/images/3.svg"
+            />
+            <img
+              alt="clock"
+              class="step__graphical-image absolute"
+              src="/images/clock.png"
+            />
+            <div class="step__body absolute">
+              <img
+                alt="<step three"
+                src="/images/03.svg"
+                class="step__number"
+              />
+              <h5>Určení časové osy a odhad nákladů</h5>
+              <p class="font-grey">
+                Na základě vytvořeného zadání se stanoví odhad rozpočtu na vývoj
+                aplikace a přibližný čas strávený na vývoji. Odhad je většinou
+                stanoven počtem tzv. člověkodnů (Man-day).
+              </p>
+            </div>
+            <span class="step__dot absolute"></span>
+          </div>
+          <div class="step step--4 relative">
+            <img
+              alt="four"
+              class="step__numeric-image absolute"
+              src="/images/4.svg"
+            />
+            <img
+              alt="cursor"
+              class="step__graphical-image absolute"
+              src="/images/cursor.png"
+            />
+            <div class="step__body absolute">
+              <img alt="<step four" src="/images/04.svg" class="step__number" />
+              <h5>Návrh architektury aplikace, UX design</h5>
+              <p class="font-grey">
+                Toto je jedna z nejdůležitějších fází vývoje, začíná vytvořením
+                architektury a jednoduchých náčrtů uživatelského rozhraní tzv.
+                wireframů. Po schválení náčrtů rozhraní je řešen grafický
+                design.
+              </p>
+            </div>
+            <span class="step__dot absolute"></span>
+          </div>
+          <div class="step step--5 relative">
+            <img
+              alt="five"
+              class="step__numeric-image absolute"
+              src="/images/5.svg"
+            />
+            <img
+              alt="pencil"
+              class="step__graphical-image absolute"
+              src="/images/pencil.png"
+            />
+            <div class="step__body absolute">
+              <img alt="<step five" src="/images/05.svg" class="step__number" />
+              <h5>Grafický design</h5>
+              <p class="font-grey">
+                Grafik na základě požadavků klienta, korporátních barev a typu
+                produktu navrhuje design, který nejvíce vystihuje charakter
+                produktu.
+              </p>
+            </div>
+            <span class="step__dot absolute"></span>
+          </div>
+          <div class="step step--6 relative">
+            <img
+              alt="six"
+              class="step__numeric-image absolute"
+              src="/images/6.svg"
+            />
+            <img
+              alt="settings"
+              class="step__graphical-image absolute"
+              src="/images/settings.png"
+            />
+            <div class="step__body absolute">
+              <img alt="step six" src="/images/06.svg" class="step__number" />
+              <h5>Vývoj app</h5>
+              <p class="font-grey">
+                V této fázi tým vývojářů vytváří rámec webové aplikace, navrhuje
+                strukturu databáze, vyvíjí modul, třídy a knihovny a
+                implementuje všechny funkce uvedené v souhrnné dokumentaci.
+              </p>
+            </div>
+            <span class="step__dot absolute"></span>
+          </div>
+          <div class="step step--7 relative">
+            <img
+              alt="seven"
+              class="step__numeric-image absolute"
+              src="/images/7.svg"
+            />
+            <img
+              alt="glass"
+              class="step__graphical-image absolute"
+              src="/images/glass.png"
+            />
+            <div class="step__body absolute">
+              <img alt="step seven" src="/images/07.svg" class="step__number" />
+              <h5>Vývoj app</h5>
+              <p class="font-grey">
+                V této fázi tým vývojářů vytváří rámec webové aplikace, navrhuje
+                strukturu databáze, vyvíjí modul, třídy a knihovny a
+                implementuje všechny funkce uvedené v souhrnné dokumentaci.
+              </p>
+            </div>
+            <span class="step__dot absolute"></span>
+          </div>
+          <div class="step step--8 relative">
+            <img
+              alt="eight"
+              class="step__numeric-image absolute"
+              src="/images/8.svg"
+            />
+            <img
+              alt="glass"
+              class="step__graphical-image absolute"
+              src="/images/trophy.png"
+            />
+            <div class="step__body absolute">
+              <img alt="step seven" src="/images/08.svg" class="step__number" />
+              <h5>Fáze testování</h5>
+              <p class="font-grey">
+                Předposledním krokem v procesu vývoje webových aplikací je
+                testování kvality a oprava případných chyb. Aplikace by vždy
+                měla projít zátěžovým testováním, testováním všech funkcí a
+                uživatelského prostředí.
+              </p>
+            </div>
+            <span class="step__dot absolute"></span>
+          </div>
         </div>
-        <div class="flex-3">
-          <p>V agilním řízení lze jednoduše měnit požadavky na vývoj aplikace na základě zpětné vazby od zákazníka.</p>
-        </div>
-        <div class="flex-1"></div>
-        <div class="flex-3">
-          <p>Vodopádový model nedokáže reflektovat měnící se požadavky zákazníka. </p>
-        </div>
-        <div class="flex-1"></div>
       </div>
-
-      <div class="flex table-flex-rows font-grey">
-        <div class="flex-4 table-head">
-          <p>Testování</p>
-        </div>
-        <div class="flex-3">
-          <p>Aplikace se testuje po každém sprintu. To může pomoci vyladit každou část projektu tak, aby vyhovoval
-            potřebám zákazníka.</p>
-        </div>
-        <div class="flex-1"></div>
-        <div class="flex-3">
-          <p>Aplikace se testuje až po dokončení celé fáze vývoje. </p>
-        </div>
-        <div class="flex-1"></div>
-      </div>
-
-      <div class="flex table-flex-rows font-grey">
-        <div class="flex-4 table-head">
-          <p>Angažovanost
-            <br />
-            zákazníků</p>
-        </div>
-        <div class="flex-3">
-          <p>Klient je zapojen po celou dobu vývoje produktu.</p>
-        </div>
-        <div class="flex-1"></div>
-        <div class="flex-3">
-          <p>Klient je zapojen pouze v raných fázích projektu a po dokončení finální aplikace.</p>
-        </div>
-        <div class="flex-1"></div>
-      </div>
-
     </div>
-  </div>
 
-
-
-  <!-- FOOTER -->
-
-  <div class="footer p-t-16 m-t-20">
-    <h2 class="width-80 title-footer weight-400">
-      Kam jít dál?
-    </h2>
-    <div class="width-80 m-auto flex direction-column footer-add">
-      <div class="flex-2 relative">
-        <a href='/' class="flex align-start stroke-text">Co je webová aplikace?</a>
-        <img alt="+" class="flex align-start m-b-0 position-plus" src="/images/plus.svg" />
+    <div class="m-t-16 cactus-box m-auto">
+      <h4>Metodiky vývoje</h4>
+      <div class="process__settings-box process_metods flex-1">
+        <div class="flex">
+          <div>
+            <img
+              alt="settings-big"
+              class="img-big-settings"
+              src="/images/big-settings.png"
+            />
+          </div>
+          <div class="font-grey cactus-text flex flex-2">
+            <div class="m-r-14 flex-1">
+              <h2 class="font-blue h2-big h2-big-lines">Agilní vývoj</h2>
+              <p>
+                Jedná se o více flexibilní model. U této metodiky zákazník
+                upravuje zadání webové aplikace v průběhu prací tak, aby dle
+                reálně fungujících částí aplikace mohl ovlivňovat funkcionalitu
+                modelů. Funguje to tedy tak, že se stanoví plán práce vždy jen
+                na několik týdnů dopředu (tzv. sprint). Před každým sprintem má
+                zákazník možnost se s vývojáři domluvit na tom, co bude náplní
+                daného sprintu. Tedy například na jaké části aplikace, nebo
+                funkcionalitě se bude v dané období pracovat.
+              </p>
+            </div>
+            <div class="metods-hide flex-1">
+              <h2 class="font-blue h2-big h2-big-lines">Vodopádový model</h2>
+              <p>
+                U této metodiky pracuje vývojářská agentura vždy s přesně
+                specifikovaným zadáním celé aplikace. To znamená, že již na
+                začátku vývoje jsou známy veškeré požadavky zákazníka a také
+                výsledná cena aplikace. Před touto specifikací probíhá analýza
+                všech požadavků. Ve výsledné specifikaci jsou přesně rozvrženy
+                fáze projektu, které vedou ke splnění cíle.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="metods-hidden">
+          <h2 class="font-blue h2-big h2-big-lines">Vodopádový model</h2>
+          <p class="font-grey cactus-text">
+            U této metodiky pracuje vývojářská agentura vždy s přesně
+            specifikovaným zadáním celé aplikace. To znamená, že již na začátku
+            vývoje jsou známy veškeré požadavky zákazníka a také výsledná cena
+            aplikace. Před touto specifikací probíhá analýza všech požadavků. Ve
+            výsledné specifikaci jsou přesně rozvrženy fáze projektu, které
+            vedou ke splnění cíle.
+          </p>
+        </div>
       </div>
-      <div class="flex-2 relative m-l-2">
-        <a href='/technology.html' class="flex align-start stroke-text">Technologie</a>
-        <img alt="+" class="flex align-start m-b-0 position-plus" src="/images/plus.svg" />
-      </div>
-      <div class="flex-1 relative">
-        <a href='/price.html' class="flex align-start stroke-text">Cena</a>
-        <img alt="+" class="flex align-start m-b-0 position-plus" src="/images/plus.svg" />
+
+      <div class="table-flex p-t-16">
+        <div class="flex table-flex-rows font-grey">
+          <div class="flex-4 table-head">
+            <p>Pracovní proces</p>
+          </div>
+          <div class="flex-3">
+            <p>
+              Agilní řízení rozděluje proces vývoje aplikace do několika
+              sprintů. Každý sprint musí být dokončen a schválen klientem, než
+              se vývoj pustí do dalšího.
+            </p>
+          </div>
+          <div class="flex-1"></div>
+          <div class="flex-3">
+            <p>
+              Existuje jen jeden vývojový cyklus. Projekt není rozdělený do
+              několika sprintů. Vývojáři získají požadavky od klienta a začnou
+              pracovat na celém projektu.
+            </p>
+          </div>
+          <div class="flex-1"></div>
+        </div>
+
+        <div class="flex table-flex-rows font-grey">
+          <div class="flex-4 table-head">
+            <p>Flexibilita</p>
+          </div>
+          <div class="flex-3">
+            <p>
+              V agilním řízení lze jednoduše měnit požadavky na vývoj aplikace
+              na základě zpětné vazby od zákazníka.
+            </p>
+          </div>
+          <div class="flex-1"></div>
+          <div class="flex-3">
+            <p>
+              Vodopádový model nedokáže reflektovat měnící se požadavky
+              zákazníka.
+            </p>
+          </div>
+          <div class="flex-1"></div>
+        </div>
+
+        <div class="flex table-flex-rows font-grey">
+          <div class="flex-4 table-head">
+            <p>Testování</p>
+          </div>
+          <div class="flex-3">
+            <p>
+              Aplikace se testuje po každém sprintu. To může pomoci vyladit
+              každou část projektu tak, aby vyhovoval potřebám zákazníka.
+            </p>
+          </div>
+          <div class="flex-1"></div>
+          <div class="flex-3">
+            <p>Aplikace se testuje až po dokončení celé fáze vývoje.</p>
+          </div>
+          <div class="flex-1"></div>
+        </div>
+
+        <div class="flex table-flex-rows font-grey">
+          <div class="flex-4 table-head">
+            <p>
+              Angažovanost
+              <br />
+              zákazníků
+            </p>
+          </div>
+          <div class="flex-3">
+            <p>Klient je zapojen po celou dobu vývoje produktu.</p>
+          </div>
+          <div class="flex-1"></div>
+          <div class="flex-3">
+            <p>
+              Klient je zapojen pouze v raných fázích projektu a po dokončení
+              finální aplikace.
+            </p>
+          </div>
+          <div class="flex-1"></div>
+        </div>
       </div>
     </div>
-  </div>
-  <script src='scripts/main.js'></script>
-</body>
 
+    <!-- FOOTER -->
+
+    <div class="footer p-t-16 m-t-20">
+      <h2 class="width-80 title-footer weight-400">Kam jít dál?</h2>
+      <div class="width-80 m-auto flex direction-column footer-add">
+        <div class="flex-2 relative">
+          <a href="/" class="flex align-start stroke-text"
+            >Co je webová aplikace?</a
+          >
+          <img
+            alt="+"
+            class="flex align-start m-b-0 position-plus"
+            src="/images/plus.svg"
+          />
+        </div>
+        <div class="flex-2 relative m-l-2">
+          <a href="/technology.html" class="flex align-start stroke-text"
+            >Technologie</a
+          >
+          <img
+            alt="+"
+            class="flex align-start m-b-0 position-plus"
+            src="/images/plus.svg"
+          />
+        </div>
+        <div class="flex-1 relative">
+          <a href="/price.html" class="flex align-start stroke-text">Cena</a>
+          <img
+            alt="+"
+            class="flex align-start m-b-0 position-plus"
+            src="/images/plus.svg"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/arrows-svg@1.1.1/dist/main.js"></script>
+    <script src="scripts/main.js"></script>
+  </body>
 </html>
