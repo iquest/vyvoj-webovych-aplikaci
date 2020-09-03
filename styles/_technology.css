@@ -51,8 +51,15 @@
 .img-building {
   width: 50%;
 }
+.img-houses {
+  width: 50%;
+}
 
 .img-hours {
+  width: 85%;
+}
+
+.img-bowl {
   width: 85%;
 }
 
@@ -77,6 +84,10 @@
 
 .price-box-margin-med {
   margin-top: 5rem;
+}
+
+.price-show-01 {
+  display: none;
 }
 
 @media only screen and (max-width: 1300px) {
@@ -110,6 +121,69 @@
 
   .price-h4 {
     padding-bottom: 4rem;
+  }
+
+  .price-hide-01 {
+    display: none;
+  }
+
+  .price-show-01 {
+    display: flex;
+  }
+
+  .img-price {
+    width: 80%;
+  }
+
+  .price-list-boxes {
+    padding-left: 0;
+  }
+
+  .price-box-margin-big {
+    margin-top: 0;
+  }
+
+  .set-margin {
+    margin-top: -9rem;
+  }
+
+  .set-column {
+    flex-direction: column;
+  }
+
+  .img-houses {
+    transform: translate(72px, 107px);
+  }
+
+  .ball-grey {
+    display: none;
+  }
+
+  .img-hours {
+    width: 30%;
+    transform: translate(28rem, -35rem);
+  }
+
+  .img-bowl {
+    width: 30%;
+    transform: translate(24rem, 14rem);
+  }
+
+  .price-box-5 {
+    margin-top: -28rem;
+  }
+
+  .img-phone {
+    width: 31%;
+    transform: translate(30rem, -35rem);
+  }
+
+  .price-list-boxes {
+    z-index: 0;
+  }
+
+  .ball-green {
+    display: none;
   }
 
   .blue-line {
@@ -153,8 +227,36 @@
     padding-top: 4rem;
   }
 
+  .price-box-1 {
+    margin-left: 2rem;
+  }
+
   .padding-title {
     padding-top: 4rem;
+  }
+
+  .price-box-5 {
+    margin-top: -22rem;
+  }
+
+  .price-list-boxes {
+    margin-left: 0;
+  }
+
+  .justify {
+    justify-content: flex-start;
+  }
+
+  .img-hours {
+    transform: translate(21rem, -35rem);
+  }
+
+  .img-bowl {
+    transform: translate(16rem, 14rem);
+  }
+
+  .img-phone {
+    transform: translate(20rem, -33rem);
   }
 
   .rotated-text {
@@ -198,7 +300,63 @@
   }
 
   .price-title-text {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+  }
+
+  .price-list-boxes {
+    padding-top: 0;
+  }
+
+  .price-h4-marg {
+    margin-bottom: 7rem;
+  }
+
+  .set-margin {
+    margin-top: 3rem;
+  }
+
+  .price-box-4 {
+    margin-top: 3rem;
+  }
+
+  .price-box-5 {
+    margin-top: 3rem;
+  }
+
+  .price-box-6 {
+    margin-top: 3rem;
+  }
+
+  .app-icon-number {
+    margin-bottom: 0;
+  }
+
+  .number-01 {
+    align-self: flex-end;
+  }
+
+  .img-price {
+    display: none;
+  }
+
+  .img-building {
+    display: none;
+  }
+
+  .img-houses {
+    display: none;
+  }
+
+  .img-hours {
+    display: none;
+  }
+
+  .img-bowl {
+    display: none;
+  }
+
+  .img-phone {
+    display: none;
   }
 
   .price-h4 {
@@ -229,5 +387,30 @@
   }
   .big-h4 {
     font-size: 2.4rem;
+  }
+
+  .price-h4-marg {
+    margin-bottom: 4rem;
+  }
+
+  .price-list-boxes {
+    font-size: 1.2rem;
+    padding-bottom: 0;
+  }
+
+  .set-margin {
+    margin-top: 2rem;
+  }
+
+  .price-box-4 {
+    margin-top: 2rem;
+  }
+
+  .price-box-5 {
+    margin-top: 2rem;
+  }
+
+  .price-box-6 {
+    margin-top: 2rem;
   }
 }
