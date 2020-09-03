@@ -94,10 +94,42 @@ const seventhArrow = arrowCreate({
     translation: [0.3, 0],
   },
 });
-document.body.appendChild(firstArrow.node);
-document.body.appendChild(secondArrow.node);
-document.body.appendChild(thirdArrow.node);
-document.body.appendChild(fourthArrow.node);
-document.body.appendChild(fifthArrow.node);
-document.body.appendChild(sixthArrow.node);
-document.body.appendChild(seventhArrow.node);
+
+let screenWidth = document.documentElement.clientWidth;
+
+let deletedChilds = false;
+
+const addLines = () => {
+  document.body.appendChild(firstArrow.node);
+  document.body.appendChild(secondArrow.node);
+  document.body.appendChild(thirdArrow.node);
+  document.body.appendChild(fourthArrow.node);
+  document.body.appendChild(fifthArrow.node);
+  document.body.appendChild(sixthArrow.node);
+  document.body.appendChild(seventhArrow.node);
+};
+
+addLines();
+
+document.body.onresize = function () {
+  screenWidth = document.documentElement.clientWidth;
+
+  if (screenWidth > 750) {
+    if (deletedChilds) {
+      addLines();
+      deletedChilds = false;
+    }
+  } else {
+    if (!deletedChilds) {
+      document.body.removeChild(firstArrow.node);
+      document.body.removeChild(secondArrow.node);
+      document.body.removeChild(thirdArrow.node);
+      document.body.removeChild(fourthArrow.node);
+      document.body.removeChild(fifthArrow.node);
+      document.body.removeChild(sixthArrow.node);
+      document.body.removeChild(seventhArrow.node);
+
+      deletedChilds = true;
+    }
+  }
+};

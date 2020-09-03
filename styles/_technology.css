@@ -165,6 +165,11 @@
     top: 18rem;
   }
 
+  .img-technology-box {
+    display: flex;
+    justify-content: center;
+  }
+
   .img-technology {
     margin-bottom: 2rem;
   }

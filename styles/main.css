@@ -185,6 +185,10 @@ h5 {
     linear-gradient(to right, #e2f1fa62 83%, #b9c6d9 87%);
 }
 
+.display-none {
+  display: none;
+}
+
 /* 5 reasons box */
 
 .home-box1 {
@@ -385,6 +389,10 @@ h5 {
 
 /* Process Page */
 
+.m-sett-text {
+  margin-right: 7rem;
+}
+
 /* process title */
 
 .blue-line {
@@ -571,10 +579,6 @@ h5 {
 
 .width-80 {
   width: 80%;
-}
-
-.advantage-styles {
-  max-width: 120rem;
 }
 
 .metods-hidden {
@@ -778,7 +782,19 @@ h5 {
     margin-left: -10%;
   }
 }
+@media only screen and (max-width: 965px) {
+  /* .home-list-position {
+    margin-left: 0;
+  } */
 
+  .home-list {
+    max-height: 301rem;
+  }
+
+  .h5-small {
+    font-size: 1.9rem;
+  }
+}
 @media only screen and (max-width: 950px) {
   body {
     font-size: 1.6rem;
@@ -793,8 +809,16 @@ h5 {
     font-size: 2.1rem;
   }
 
+  .h5-small {
+    font-size: 1.9rem;
+  }
+
   .font-media {
     font-size: 1.4rem;
+  }
+
+  .metods-width {
+    width: 130%;
   }
 
   .title-footer {
@@ -820,6 +844,10 @@ h5 {
 
   h5 {
     margin-top: 2rem;
+  }
+
+  .home-list {
+    max-height: 375rem;
   }
 
   .app-icon-plane {
@@ -890,6 +918,15 @@ h5 {
     font-size: 1.5rem;
   }
 
+  .line-me {
+    margin-left: -7%;
+    width: 110%;
+  }
+
+  .metods-width {
+    width: 150%;
+  }
+
   .table-header {
     margin-left: -7%;
     width: 120%;
@@ -898,6 +935,10 @@ h5 {
   .table-head {
     flex: 3;
     margin-right: 2rem;
+  }
+
+  .table-head-process {
+    font-size: 1.6rem;
   }
 
   .table-flex-rows {
@@ -923,11 +964,23 @@ h5 {
     font-size: 3.6rem;
   }
 
+  .h2-big {
+    font-size: 2rem;
+  }
+
+  .h4-metods {
+    margin-bottom: 0;
+    font-size: 3rem;
+    margin-left: -13%;
+  }
+
   .advantage-styles {
     flex-wrap: nowrap;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding-right: 0rem;
+    padding-left: 0rem;
   }
 
   .cactus-text-small {
@@ -937,6 +990,22 @@ h5 {
 
   .hide-cactus-text {
     display: none;
+  }
+
+  .hide-sett-img {
+    display: none;
+  }
+
+  .metods-width {
+    width: 100%;
+  }
+
+  .process__settings-box {
+    margin-top: 0;
+  }
+
+  .m-sett-text {
+    margin-right: 0;
   }
 
   .font-footer {
@@ -1098,7 +1167,6 @@ h5 {
     width: 5rem;
   }
   .home-list-title {
-    width: 105%;
     margin-bottom: 4rem;
   }
   .home-list-position {

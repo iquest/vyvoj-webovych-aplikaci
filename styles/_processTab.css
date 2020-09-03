@@ -8,6 +8,10 @@
   stroke-width: 2;
 }
 
+.h4-width {
+  width: 90%;
+}
+
 .progress {
   padding: 4rem 9rem 18rem 7rem;
   display: flex;
@@ -188,7 +192,116 @@
 }
 
 @media only screen and (max-width: 965px) {
+  .step {
+    width: 344px;
+  }
+  .step__body {
+    width: 25.4rem;
+    font-size: 1.5rem;
+  }
+
+  .step:nth-child(odd) .step__dot {
+    right: 79px;
+  }
+  .step__number {
+    margin-bottom: 12px;
+  }
+
   .step.step--1 {
     transform: translate(13px, 30px);
+  }
+  .step.step--2 {
+    transform: translate(0px, 7rem);
+  }
+  .step.step--4 {
+    transform: translate(-5px, -9rem);
+  }
+  .step.step--5 {
+    transform: translate(-1px, -23rem);
+  }
+  .step.step--6 {
+    transform: translate(0px, -40rem);
+  }
+  .step.step--7 {
+    transform: translate(1rem, -50rem);
+  }
+  .step.step--8 {
+    transform: translate(-5px, -63rem);
+  }
+
+  .step:nth-child(even) .step__numeric-image {
+    top: 33rem;
+    left: 22rem;
+  }
+  .step__graphical-image {
+    right: 78px;
+    top: -44px;
+    width: 88px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .step__dot {
+    display: none;
+  }
+
+  .step.step--1 {
+    transform: none;
+  }
+  .step.step--2 {
+    transform: none;
+  }
+  .step.step--4 {
+    transform: none;
+  }
+  .step.step--5 {
+    transform: none;
+  }
+  .step.step--6 {
+    transform: none;
+  }
+  .step.step--7 {
+    transform: none;
+  }
+  .step.step--8 {
+    transform: none;
+    margin-bottom: 8rem !important;
+  }
+
+  .step__graphical-image {
+    right: 59px;
+    top: -13px;
+  }
+
+  .step:nth-child(even) .step__numeric-image {
+    top: 31rem;
+    left: 24rem;
+  }
+
+  .step:nth-child(odd) {
+    align-self: center;
+    margin-bottom: 4rem;
+  }
+
+  .step:nth-child(even) {
+    align-self: center;
+    margin-bottom: 4rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .step {
+    width: 259px;
+  }
+  .step__body {
+    margin-right: 0;
+  }
+  .step__numeric-image {
+    display: none;
+  }
+  .step__graphical-image {
+    right: -10px;
+    top: -13px;
+    width: 6rem;
   }
 }
