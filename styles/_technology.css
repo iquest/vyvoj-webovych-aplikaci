@@ -175,7 +175,7 @@
 
   .img-phone {
     width: 31%;
-    transform: translate(30rem, -35rem);
+    transform: translate(30rem, -30rem);
   }
 
   .price-list-boxes {
@@ -256,7 +256,7 @@
   }
 
   .img-phone {
-    transform: translate(20rem, -33rem);
+    transform: translate(20rem, -30rem);
   }
 
   .rotated-text {
