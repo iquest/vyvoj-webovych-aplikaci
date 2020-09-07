@@ -1,217 +1,242 @@
 <!DOCTYPE html>
 <html lang="cs">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://use.typekit.net/bvk7ryi.css" />
+    <link href="styles/main.css" rel="stylesheet" />
+    <link href="styles/_navButton.css" rel="stylesheet" />
+    <link href="styles/_phaseBox.css" rel="stylesheet" />
+    <link href="styles/_technology.css" rel="stylesheet" />
 
-  <link rel="stylesheet" href="https://use.typekit.net/bvk7ryi.css" />
-  <link href="styles/main.css" rel="stylesheet" />
-  <link href="styles/_navButton.css" rel="stylesheet" />
-  <link href="styles/_phaseBox.css" rel="stylesheet" />
-  <link href="styles/_technology.css" rel="stylesheet" />
+    <title>iQuest</title>
+  </head>
 
+  <body>
+    <div class="p-b-16">
+      <div class="navigation">
+        <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
 
-  <title>iQuest</title>
-</head>
+        <label for="navi-toggle" class="navigation__button">
+          <span class="navigation__icon">&nbsp;</span>
+        </label>
 
-<body>
-  <div class="p-b-16">
-    <div class="navigation">
-      <input type="checkbox" class="navigation__checkbox" id="navi-toggle" />
+        <div class="navigation__background">&nbsp;</div>
 
-      <label for="navi-toggle" class="navigation__button">
-        <span class="navigation__icon">&nbsp;</span>
-      </label>
+        <nav class="navigation__nav">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="/" class="navigation__link" onClick="handleChange()"
+                >Co je webová aplikace?</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="/process.html" class="navigation__link">Proces vývoje</a>
+            </li>
+            <li class="navigation__item">
+              <a href="/technology.html" class="navigation__link"
+                >Technologie</a
+              >
+            </li>
+            <li class="navigation__item">
+              <a href="/price.html" class="navigation__link">Cena</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
 
-      <div class="navigation__background">&nbsp;</div>
-
-      <nav class="navigation__nav">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="/" class="navigation__link" onClick="handleChange()">Co je webová aplikace?</a>
-          </li>
-          <li class="navigation__item">
-            <a href="/process.html" class="navigation__link">Proces vývoje</a>
-          </li>
-          <li class="navigation__item">
-            <a href="/technology.html" class="navigation__link">Technologie</a>
-          </li>
-          <li class="navigation__item">
-            <a href="/price.html" class="navigation__link">Cena</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__link">Chci appku</a>
-          </li>
-        </ul>
+      <nav class="flex p-t-8 font-grey align-center font-media opacity-0-media">
+        <div class="flex-1"></div>
+        <a href="/" class="link flex-1 text-center pointer"
+          >Co je webová aplikace?</a
+        >
+        <a href="/process.html" class="link flex-1 text-center pointer"
+          >Proces vývoje</a
+        >
+        <a
+          href="/technology.html"
+          class="link-active flex-1 text-center pointer"
+          >Technologie</a
+        >
+        <a href="/price.html" class="link flex-1 text-center pointer">Cena</a>
+        <div class="flex-1"></div>
       </nav>
     </div>
 
-
-
-    <nav class="flex p-t-8 font-grey align-center font-media opacity-0-media">
-      <div class="flex-1 flex-0-media"></div>
-      <img alt="logo" class="flex-1" src="images/logo-black.svg" />
-      <a href='/' class="link flex-1 text-center pointer">Co je webová aplikace?</a>
-      <a href='/process.html' class="link flex-1 text-center pointer">Proces vývoje</a>
-      <a href='/technology.html' class="link-active flex-1 text-center pointer">Technologie</a>
-      <a href='/price.html' class="link flex-1 text-center pointer">Cena</a>
-      <div class="flex-1">
-        <button class="btn-blue font-white pointer">
-          Chci appku
-        </button>
+    <div class="width-80 m-auto relative">
+      <div class="rotated-text flex align-center justify-center">
+        <div class="blue-line m-r-8">&nbsp;</div>
+        <p>Technologie</p>
       </div>
-      <div class="flex-1 flex-0-media"></div>
-    </nav>
-  </div>
-
-
-  <div class="width-80 m-auto relative">
-    <div class="rotated-text flex align-center justify-center">
-      <div class="blue-line m-r-8">&nbsp;</div>
-      <p>Technologie</p>
-    </div>
-    <h4 class="font-blue width-80 m-auto padding-title">
-      Technologie hrají významnou roli
-      v procesu vývoje webových aplikací. Mít základní přehled o technologiích je výhodné zejména proto, že dostanete
-      lepší představu o technologických možnostech vašeho projektu.
-    </h4>
-  </div>
-
-
-  <div class="m-t-16 technology-front m-auto ">
-
-    <h4 class="big-h4">
-      Technologie pro frontend
-    </h4>
-    <div class=" font-grey">
-
-      <div class="flex align-center technology-sm-textbox technology-sm-textbox technology-sm-textbox-border">
-        <div class="img-technology-box">
-          <img alt="ico-html" class='img-technology' src="/images/ico-html.svg" />
-        </div>
-        <div>
-          <h2 class="font-blue">
-            HTML a kaskádové styly CSS
-          </h2>
-          <p>
-            Na základě předchozí diskuze vyplynou nějaké požadavky na funkce a informace, které by měla mobilní aplikace
-            obsahovat. Vytvoří se tedy návrh zadání, který se opět diskutuje se zákazníkem.
-          </p>
-        </div>
-      </div>
-
-      <div class="flex align-center technology-sm-textbox technology-sm-textbox">
-        <div class="img-technology-box">
-          <img alt="ico-js" class='img-technology' src="/images/ico-js.svg" />
-        </div>
-        <div>
-          <h2 class="font-blue">
-            JavaScript (JS)
-          </h2>
-          <p>
-            Je skriptovací jazyk, který je používaný především u webů a webových aplikací. Používá se k vylepšení HTML
-            stránek a běžně se nachází v HTML kódu. JavaScript tvoří interaktivní a dynamický obsah webu. JS umožňuje
-            reagovat na události, ukazovat speciální efekty, ověřovat data, vytvářet soubory cookies atd.
-          </p>
-        </div>
-      </div>
+      <h4 class="font-blue width-80 m-auto padding-title">
+        Technologie hrají významnou roli v procesu vývoje webových aplikací. Mít
+        základní přehled o technologiích je výhodné zejména proto, že dostanete
+        lepší představu o technologických možnostech vašeho projektu.
+      </h4>
     </div>
 
-
-    <h4 class="technology-back big-h4">
-      Technologie pro backend
-    </h4>
-    <div class="flex direction-column font-grey">
-
-      <div class="flex align-center technology-sm-textbox technology-sm-textbox-border">
-        <div class="img-technology-box">
-          <img alt="ico-ruby" class='img-technology' src="/images/ico-ruby.svg" />
+    <div class="m-t-16 technology-front m-auto">
+      <h4 class="big-h4">Technologie pro frontend</h4>
+      <div class="font-grey">
+        <div
+          class="flex align-center technology-sm-textbox technology-sm-textbox technology-sm-textbox-border"
+        >
+          <div class="img-technology-box">
+            <img
+              alt="ico-html"
+              class="img-technology"
+              src="/images/ico-html.svg"
+            />
+          </div>
+          <div>
+            <h2 class="font-blue">HTML a kaskádové styly CSS</h2>
+            <p>
+              Na základě předchozí diskuze vyplynou nějaké požadavky na funkce a
+              informace, které by měla mobilní aplikace obsahovat. Vytvoří se
+              tedy návrh zadání, který se opět diskutuje se zákazníkem.
+            </p>
+          </div>
         </div>
-        <div>
-          <h2 class="font-blue">
-            Ruby (Ruby on Rails)
-          </h2>
-          <p>
-            je framework pro vytváření webových aplikací. Je založen na nejmodernějších technologiích, které umožňují
-            snadno a rychle vytvářet webové aplikace na míru zákazníka. Díky jasně definovaným konvencím, jako např. MVC
-            (Model-View-Controller), lze za velice krátký čas postavit funkční základ aplikace v době, kdy jiné
-            frameworky teprve začínají s konfigurací systému.
-          </p>
+
+        <div
+          class="flex align-center technology-sm-textbox technology-sm-textbox"
+        >
+          <div class="img-technology-box">
+            <img alt="ico-js" class="img-technology" src="/images/ico-js.svg" />
+          </div>
+          <div>
+            <h2 class="font-blue">JavaScript (JS)</h2>
+            <p>
+              Je skriptovací jazyk, který je používaný především u webů a
+              webových aplikací. Používá se k vylepšení HTML stránek a běžně se
+              nachází v HTML kódu. JavaScript tvoří interaktivní a dynamický
+              obsah webu. JS umožňuje reagovat na události, ukazovat speciální
+              efekty, ověřovat data, vytvářet soubory cookies atd.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div class="flex align-center technology-sm-textbox technology-sm-textbox-border">
-        <div class="img-technology-box">
-          <img alt="ico-php" class='img-technology' src="/images/ico-php.svg" />
+      <h4 class="technology-back big-h4">Technologie pro backend</h4>
+      <div class="flex direction-column font-grey">
+        <div
+          class="flex align-center technology-sm-textbox technology-sm-textbox-border"
+        >
+          <div class="img-technology-box">
+            <img
+              alt="ico-ruby"
+              class="img-technology"
+              src="/images/ico-ruby.svg"
+            />
+          </div>
+          <div>
+            <h2 class="font-blue">Ruby (Ruby on Rails)</h2>
+            <p>
+              je framework pro vytváření webových aplikací. Je založen na
+              nejmodernějších technologiích, které umožňují snadno a rychle
+              vytvářet webové aplikace na míru zákazníka. Díky jasně definovaným
+              konvencím, jako např. MVC (Model-View-Controller), lze za velice
+              krátký čas postavit funkční základ aplikace v době, kdy jiné
+              frameworky teprve začínají s konfigurací systému.
+            </p>
+          </div>
         </div>
-        <div>
-          <h2 class="font-blue">
-            PHP (Laravel)
-          </h2>
-          <p>
-            je framework pro vytváření webových aplikací v jazyce PHP podle architektonického vzoru MVC.
-          </p>
-        </div>
-      </div>
 
-      <div class="flex align-center technology-sm-textbox technology-sm-textbox-border">
-        <div class="img-technology-box">
-          <img alt="ico-python" class='img-technology' src="/images/ico-python.svg" />
+        <div
+          class="flex align-center technology-sm-textbox technology-sm-textbox-border"
+        >
+          <div class="img-technology-box">
+            <img
+              alt="ico-php"
+              class="img-technology"
+              src="/images/ico-php.svg"
+            />
+          </div>
+          <div>
+            <h2 class="font-blue">PHP (Laravel)</h2>
+            <p>
+              je framework pro vytváření webových aplikací v jazyce PHP podle
+              architektonického vzoru MVC.
+            </p>
+          </div>
         </div>
-        <div>
-          <h2 class="font-blue">
-            Python (Django)
-          </h2>
-          <p>
-            je framework pro vytváření webových aplikací napsaných v Pythonu. Zaměřuje se na znovupoužitelnost a
-            propojitelnost komponent a rychlý vývoj.
-          </p>
-        </div>
-      </div>
 
-      <div class="flex align-center technology-sm-textbox">
-        <div class="img-technology-box">
-          <img alt="ico-spring" class='img-technology' src="/images/ico-spring.svg" />
+        <div
+          class="flex align-center technology-sm-textbox technology-sm-textbox-border"
+        >
+          <div class="img-technology-box">
+            <img
+              alt="ico-python"
+              class="img-technology"
+              src="/images/ico-python.svg"
+            />
+          </div>
+          <div>
+            <h2 class="font-blue">Python (Django)</h2>
+            <p>
+              je framework pro vytváření webových aplikací napsaných v Pythonu.
+              Zaměřuje se na znovupoužitelnost a propojitelnost komponent a
+              rychlý vývoj.
+            </p>
+          </div>
         </div>
-        <div>
-          <h2 class="font-blue">
-            Java (Spring)
-          </h2>
-          <p>
-            jedná se o framework, který poskytuje podporu infrastruktury pro vývoj Java aplikací. Spring je jeden z
-            nejpopulárnějších rámců Java EE a pomáhá vývojářům vytvářet vysoce výkonné aplikace.
-          </p>
+
+        <div class="flex align-center technology-sm-textbox">
+          <div class="img-technology-box">
+            <img
+              alt="ico-spring"
+              class="img-technology"
+              src="/images/ico-spring.svg"
+            />
+          </div>
+          <div>
+            <h2 class="font-blue">Java (Spring)</h2>
+            <p>
+              jedná se o framework, který poskytuje podporu infrastruktury pro
+              vývoj Java aplikací. Spring je jeden z nejpopulárnějších rámců
+              Java EE a pomáhá vývojářům vytvářet vysoce výkonné aplikace.
+            </p>
+          </div>
         </div>
       </div>
     </div>
 
-  </div>
+    <!-- FOOTER -->
 
-
-
-  <!-- FOOTER -->
-
-  <div class="footer p-t-16 m-t-20">
-    <h2 class="width-80 title-footer weight-400">
-      Kam jít dál?
-    </h2>
-    <div class="width-80 m-auto flex direction-column footer-add">
-      <div class="flex-2 relative m-l-2">
-        <a href='/' class="flex align-start stroke-text">Co je webová aplikace?</a>
-        <img alt="+" class="flex align-start m-b-0 position-plus" src="/images/plus.svg" />
-      </div>
-      <div class="flex-2 relative">
-        <a href='/process.html' class="flex align-start stroke-text">Proces vývoje</a>
-        <img alt="+" class="flex align-start m-b-0 position-plus" src="/images/plus.svg" />
-      </div>
-      <div class="flex-1 relative">
-        <a href='/price.html' class="flex align-start stroke-text">Cena</a>
-        <img alt="+" class="flex align-start m-b-0 position-plus" src="/images/plus.svg" />
+    <div class="footer p-t-16 m-t-20">
+      <h2 class="width-80 title-footer weight-400">Kam jít dál?</h2>
+      <div class="width-80 m-auto flex direction-column footer-add">
+        <div class="flex-2 relative m-l-2">
+          <a href="/" class="flex align-start stroke-text"
+            >Co je webová aplikace?</a
+          >
+          <img
+            alt="+"
+            class="flex align-start m-b-0 position-plus"
+            src="/images/plus.svg"
+          />
+        </div>
+        <div class="flex-2 relative">
+          <a href="/process.html" class="flex align-start stroke-text"
+            >Proces vývoje</a
+          >
+          <img
+            alt="+"
+            class="flex align-start m-b-0 position-plus"
+            src="/images/plus.svg"
+          />
+        </div>
+        <div class="flex-1 relative">
+          <a href="/price.html" class="flex align-start stroke-text">Cena</a>
+          <img
+            alt="+"
+            class="flex align-start m-b-0 position-plus"
+            src="/images/plus.svg"
+          />
+        </div>
       </div>
     </div>
-  </div>
-  <script src='scripts/main.js'></script>
-</body>
-
+    <script src="scripts/main.js"></script>
+  </body>
 </html>
