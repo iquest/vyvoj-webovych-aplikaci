@@ -57,6 +57,9 @@
   transform: translate(-80px);
   margin-bottom: 10px;
 }
+.step.step--3 {
+  transform: translate(33px, 30px);
+}
 .step.step--4 {
   transform: translate(-110px);
   margin-bottom: 140px;
@@ -107,7 +110,13 @@
   top: 50%;
 }
 
+.step__numeric-image {
+  max-height: 220px;
+  max-width: 160px;
+}
+
 /* SCREEN SIZE STYLES */
+
 @media only screen and (max-width: 1500px) {
   .step:nth-child(odd) .step__numeric-image {
     top: 35rem;
@@ -249,6 +258,9 @@
     transform: none;
   }
   .step.step--2 {
+    transform: none;
+  }
+  .step.step--3 {
     transform: none;
   }
   .step.step--4 {
