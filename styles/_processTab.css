@@ -9,7 +9,8 @@
 }
 
 .h4-width {
-  width: 90%;
+  width: 75%;
+  margin-left: 11%;
 }
 
 .progress {
@@ -315,5 +316,18 @@
     right: -10px;
     top: -13px;
     width: 6rem;
+  }
+}
+@media only screen and (max-width: 1000px) {
+  .h4-width {
+    margin-left: 0;
+  }
+}
+@media only screen and (max-width: 750px) {
+  .h4-width {
+    margin: 4rem auto;
+    width: 95%;
+    text-align: center;
+    font-size: 2.3rem;
   }
 }
