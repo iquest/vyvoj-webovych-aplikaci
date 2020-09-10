@@ -436,6 +436,7 @@ h5 {
 
 .img-big-settings {
   width: 15vw;
+  max-width: 250px;
   margin-top: 3rem;
   margin-right: 10rem;
 }
