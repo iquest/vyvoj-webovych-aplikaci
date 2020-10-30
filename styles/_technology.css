@@ -71,13 +71,6 @@
   margin-top: -3rem;
 }
 
-.rotated-text-price {
-  transform: rotate(-90deg);
-  position: absolute;
-  left: -7rem;
-  top: 40%;
-}
-
 .price-box-margin-big {
   margin-top: 23rem;
 }
@@ -100,7 +93,7 @@
   }
 
   .rotated-text {
-    left: -12%;
+    left: -15%;
   }
 }
 
@@ -110,7 +103,7 @@
   }
 
   .rotated-text {
-    left: -15%;
+    left: -18%;
   }
 }
 
@@ -196,11 +189,7 @@
   }
 
   .rotated-text {
-    left: -14%;
-  }
-
-  .rotated-text-price {
-    top: 40%;
+    left: -20%;
   }
 
   .padding-title {
@@ -209,12 +198,6 @@
 
   .img-technology-box {
     min-width: 150px;
-  }
-}
-
-@media only screen and (max-width: 850px) {
-  .rotated-text {
-    left: -16%;
   }
 }
 
@@ -264,11 +247,7 @@
   }
 
   .rotated-text {
-    left: -11rem;
-  }
-
-  .rotated-text-price {
-    top: 18rem;
+    left: -14rem;
   }
 
   .img-technology-box {
@@ -378,7 +357,7 @@
   }
 
   .rotated-text {
-    left: -10rem;
+    left: -13rem;
     bottom: 27%;
   }
 }

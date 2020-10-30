@@ -1,0 +1,57 @@
+.cell {
+  border-bottom: 1px solid #80808070;
+  box-sizing: border-box;
+  display: flex;
+  min-height: 13rem;
+  padding: 2rem;
+  width: 50%;
+}
+
+.cell:nth-child(odd) {
+  border-right: 1px solid #80808070;
+}
+
+.cell:nth-child(-n + 2) {
+  border-top: none;
+}
+
+.cell-number {
+  height: 38px;
+}
+
+.cell-text {
+  margin-left: 6rem;
+  margin-top: 0;
+  font-weight: 300;
+}
+
+@media only screen and (max-width: 1300px) {
+  .cell-text {
+    font-size: 1.6rem;
+    margin-left: 4rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .cell {
+    flex-direction: column;
+    padding-right: 0;
+    padding-left: 0;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+  .cell:nth-child(odd) {
+    border-right: none;
+  }
+  .cell-number {
+    width: 5rem;
+  }
+  .cell-text {
+    margin-left: 0;
+    font-size: 1.6rem;
+    margin-top: 2rem;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+}
