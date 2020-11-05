@@ -17,10 +17,11 @@
 
 .cell-number {
   height: 38px;
+  margin-top: 5px;
 }
 
 .cell-text {
-  margin-left: 6rem;
+  margin-left: 2rem;
   margin-top: 0;
   font-weight: 300;
 }
@@ -28,7 +29,6 @@
 @media only screen and (max-width: 1300px) {
   .cell-text {
     font-size: 1.6rem;
-    margin-left: 4rem;
   }
 }
 
